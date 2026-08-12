@@ -27,6 +27,11 @@
 
 # Visual Studio cache directory
 .vs/
+.vsconfig
+
+# IDE settings
+.idea/
+.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -40,6 +45,7 @@ ExportedObj/
 *.suo
 *.tmp
 *.user
+*.userosscache
 *.userprefs
 *.pidb
 *.booproj
@@ -48,6 +54,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.sln.docstates
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -73,3 +80,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Operating system generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
