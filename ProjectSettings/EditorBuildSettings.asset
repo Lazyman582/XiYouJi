@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/DiscoDialoguePrototype/Scenes/WalkAndTalkPrototype.unity
+    guid: 29368d0f979b7c84085a6e8f6ad27242
   m_configObjects: {}

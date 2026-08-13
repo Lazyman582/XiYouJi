@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb47386fd142f2a4eb622d19fb89f062, type: 3}
+  m_Name: MartinConversation
+  m_EditorClassIdentifier: 
+  graphId: martin.awning.conversation
+  startNodeId: start
+  nodes:
+  - id: start
+    speaker: MARTIN
+    portraitGlyph: M
+    text: The awning leaks in three places. I have named them. The names are not
+      helping.
+    nextNodeId: 
+    mood: ANXIETY
+    choices:
+    - label: Ask what he is guarding.
+      responseNodeId: guarding
+      requiredFlag: 
+      requiredFact: 
+      setFlag: asked_guard
+      skillTag: logic
+      unavailableHint: 
+    - label: Tell him the rain has a point.
+      responseNodeId: rain
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: empathy
+      unavailableHint: 
+    - label: Say nothing. Let the silence do paperwork.
+      responseNodeId: silence
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: inland_empire
+      unavailableHint: 
+  - id: guarding
+    speaker: MARTIN
+    portraitGlyph: M
+    text: 'A door. Behind it: a room. Inside the room: an idea that has not paid
+      rent.'
+    nextNodeId: 
+    mood: LOGIC
+    choices:
+    - label: Offer to inspect the door.
+      responseNodeId: inspect
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: authority
+      unavailableHint: 
+    - label: Back away from the idea.
+      responseNodeId: end
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: volition
+      unavailableHint: 
+  - id: rain
+    speaker: MARTIN
+    portraitGlyph: M
+    text: That is a dangerous way to look at weather. But... yes. It does seem deliberate
+      tonight.
+    nextNodeId: 
+    mood: EMPATHY
+    choices:
+    - label: Ask about the chalk marks nearby.
+      responseNodeId: chalk
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: perception
+      unavailableHint: 
+    - label: Leave him with the rain.
+      responseNodeId: end
+      requiredFlag: 
+      requiredFact: 
+      setFlag: 
+      skillTag: volition
+      unavailableHint: 
+  - id: silence
+    speaker: MARTIN
+    portraitGlyph: M
+    text: 'Good. You understand the first rule of this district: everything speaks
+      when you stop helping it.'
+    nextNodeId: end
+    mood: INLAND EMPIRE
+    choices: []
+  - id: inspect
+    speaker: MARTIN
+    portraitGlyph: M
+    text: No. Actually, don't. The door is doing fine without witnesses.
+    nextNodeId: end
+    mood: AUTHORITY
+    choices: []
+  - id: chalk
+    speaker: MARTIN
+    portraitGlyph: M
+    text: Those are not marks. They are a map of where the city forgets to look.
+    nextNodeId: end
+    mood: PERCEPTION
+    choices: []
+  - id: end
+    speaker: MARTIN
+    portraitGlyph: M
+    text: The awning drips. The district waits. You can come back when you have a
+      better question.
+    nextNodeId: 
+    mood: NEUTRAL
+    choices: []
