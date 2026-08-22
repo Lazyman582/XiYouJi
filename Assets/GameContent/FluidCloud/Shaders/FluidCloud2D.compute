@@ -1,0 +1,275 @@
+#pragma kernel ClearTexture
+#pragma kernel AdvectVelocity
+#pragma kernel InjectVelocity
+#pragma kernel ComputeCurl
+#pragma kernel ApplyVorticity
+#pragma kernel ComputeDivergence
+#pragma kernel JacobiPressure
+#pragma kernel ProjectVelocity
+#pragma kernel AdvectDensity
+#pragma kernel InjectDensity
+
+int _Resolution;
+float _DeltaTime;
+float _WorldSize;
+float2 _CenterDeltaUV;
+float _VelocityHalfLife;
+float _DensityHalfLife;
+float _VorticityStrength;
+
+float2 _FieldCenter;
+float2 _SegmentStart;
+float2 _SegmentEnd;
+float2 _InjectionVelocity;
+float _WakeRadius;
+float _VelocityInjection;
+float _DensityInjection;
+float _StampStrength;
+
+Texture2D<float4> _ReadTexture;
+Texture2D<float4> _VelocityTexture;
+Texture2D<float4> _PressureTexture;
+Texture2D<float4> _DivergenceTexture;
+Texture2D<float4> _CurlTexture;
+
+RWTexture2D<float4> _WriteTexture;
+RWTexture2D<float4> _VelocityRW;
+RWTexture2D<float4> _DensityRW;
+
+bool IsValidPixel(uint2 pixel)
+{
+    return pixel.x < (uint)_Resolution && pixel.y < (uint)_Resolution;
+}
+
+int2 ClampPixel(int2 pixel)
+{
+    return clamp(pixel, int2(0, 0), int2(_Resolution - 1, _Resolution - 1));
+}
+
+float2 PixelUv(uint2 pixel)
+{
+    return (float2(pixel) + 0.5) / max(1.0, (float)_Resolution);
+}
+
+float4 SampleReadTexture(float2 uv)
+{
+    if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0)
+    {
+        return 0.0;
+    }
+
+    float2 pixelPosition = uv * _Resolution - 0.5;
+    int2 basePixel = int2(floor(pixelPosition));
+    float2 blend = frac(pixelPosition);
+
+    float4 value00 = _ReadTexture.Load(int3(ClampPixel(basePixel), 0));
+    float4 value10 = _ReadTexture.Load(int3(ClampPixel(basePixel + int2(1, 0)), 0));
+    float4 value01 = _ReadTexture.Load(int3(ClampPixel(basePixel + int2(0, 1)), 0));
+    float4 value11 = _ReadTexture.Load(int3(ClampPixel(basePixel + int2(1, 1)), 0));
+
+    return lerp(lerp(value00, value10, blend.x), lerp(value01, value11, blend.x), blend.y);
+}
+
+float4 SampleVelocityTexture(float2 uv)
+{
+    if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0)
+    {
+        return 0.0;
+    }
+
+    float2 pixelPosition = uv * _Resolution - 0.5;
+    int2 basePixel = int2(floor(pixelPosition));
+    float2 blend = frac(pixelPosition);
+
+    float4 value00 = _VelocityTexture.Load(int3(ClampPixel(basePixel), 0));
+    float4 value10 = _VelocityTexture.Load(int3(ClampPixel(basePixel + int2(1, 0)), 0));
+    float4 value01 = _VelocityTexture.Load(int3(ClampPixel(basePixel + int2(0, 1)), 0));
+    float4 value11 = _VelocityTexture.Load(int3(ClampPixel(basePixel + int2(1, 1)), 0));
+
+    return lerp(lerp(value00, value10, blend.x), lerp(value01, value11, blend.x), blend.y);
+}
+
+float DistanceToSegment(float2 samplePosition, float2 startPosition, float2 endPosition, out float2 closest)
+{
+    float2 segment = endPosition - startPosition;
+    float segmentLengthSquared = max(dot(segment, segment), 1e-6);
+    float t = saturate(dot(samplePosition - startPosition, segment) / segmentLengthSquared);
+    closest = startPosition + segment * t;
+    return distance(samplePosition, closest);
+}
+
+[numthreads(8, 8, 1)]
+void ClearTexture(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+    _WriteTexture[dispatchId.xy] = 0.0;
+}
+
+[numthreads(8, 8, 1)]
+void AdvectVelocity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    float2 uv = PixelUv(dispatchId.xy);
+    float2 shiftedUv = uv + _CenterDeltaUV;
+    float2 localVelocity = SampleReadTexture(shiftedUv).xy;
+    float2 sourceUv = shiftedUv - localVelocity * (_DeltaTime / max(_WorldSize, 0.001));
+    float2 advectedVelocity = SampleReadTexture(sourceUv).xy;
+    advectedVelocity *= exp2(-_DeltaTime / max(_VelocityHalfLife, 0.01));
+
+    float borderDistance = min(min(dispatchId.x, dispatchId.y),
+        min((uint)(_Resolution - 1) - dispatchId.x, (uint)(_Resolution - 1) - dispatchId.y));
+    advectedVelocity *= saturate(borderDistance / 2.0);
+
+    _WriteTexture[dispatchId.xy] = float4(advectedVelocity, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void InjectVelocity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy) || _StampStrength <= 0.0) return;
+
+    float2 uv = PixelUv(dispatchId.xy);
+    float2 worldPosition = _FieldCenter + (uv - 0.5) * _WorldSize;
+    float2 closest;
+    float wakeDistance = DistanceToSegment(worldPosition, _SegmentStart, _SegmentEnd, closest);
+    float wake = saturate(1.0 - wakeDistance / max(_WakeRadius, 0.01));
+    wake = wake * wake * (3.0 - 2.0 * wake) * _StampStrength;
+    if (wake <= 0.0) return;
+
+    float velocityLength = length(_InjectionVelocity);
+    float2 movementDirection = velocityLength > 1e-4
+        ? _InjectionVelocity / velocityLength
+        : float2(0.0, 1.0);
+    float2 offset = worldPosition - closest;
+    float offsetLength = length(offset);
+    float2 outward = offsetLength > 1e-4
+        ? offset / offsetLength
+        : float2(-movementDirection.y, movementDirection.x);
+
+    float2 velocity = _VelocityRW[dispatchId.xy].xy;
+    float2 impulse = outward * _VelocityInjection + _InjectionVelocity * 0.18;
+    velocity = clamp(velocity + impulse * wake, -12.0, 12.0);
+    _VelocityRW[dispatchId.xy] = float4(velocity, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void ComputeCurl(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    int2 pixel = int2(dispatchId.xy);
+    float2 velocityLeft = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(-1, 0)), 0)).xy;
+    float2 velocityRight = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(1, 0)), 0)).xy;
+    float2 velocityDown = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(0, -1)), 0)).xy;
+    float2 velocityUp = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(0, 1)), 0)).xy;
+    float cellSize = _WorldSize / max(1.0, (float)_Resolution);
+    float curl = ((velocityRight.y - velocityLeft.y) - (velocityUp.x - velocityDown.x))
+        / max(2.0 * cellSize, 1e-5);
+    _WriteTexture[pixel] = float4(curl, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void ApplyVorticity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    int2 pixel = int2(dispatchId.xy);
+    float curlCenter = _CurlTexture.Load(int3(pixel, 0)).x;
+    float curlLeft = abs(_CurlTexture.Load(int3(ClampPixel(pixel + int2(-1, 0)), 0)).x);
+    float curlRight = abs(_CurlTexture.Load(int3(ClampPixel(pixel + int2(1, 0)), 0)).x);
+    float curlDown = abs(_CurlTexture.Load(int3(ClampPixel(pixel + int2(0, -1)), 0)).x);
+    float curlUp = abs(_CurlTexture.Load(int3(ClampPixel(pixel + int2(0, 1)), 0)).x);
+
+    float2 gradient = float2(curlRight - curlLeft, curlUp - curlDown);
+    float gradientLength = max(length(gradient), 1e-5);
+    gradient /= gradientLength;
+    float2 force = float2(gradient.y, -gradient.x) * curlCenter * _VorticityStrength;
+
+    float2 velocity = _VelocityRW[pixel].xy + force * _DeltaTime;
+    _VelocityRW[pixel] = float4(clamp(velocity, -12.0, 12.0), 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void ComputeDivergence(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    int2 pixel = int2(dispatchId.xy);
+    float2 velocityLeft = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(-1, 0)), 0)).xy;
+    float2 velocityRight = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(1, 0)), 0)).xy;
+    float2 velocityDown = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(0, -1)), 0)).xy;
+    float2 velocityUp = _VelocityTexture.Load(int3(ClampPixel(pixel + int2(0, 1)), 0)).xy;
+    float cellSize = _WorldSize / max(1.0, (float)_Resolution);
+    float divergence = ((velocityRight.x - velocityLeft.x) + (velocityUp.y - velocityDown.y))
+        / max(2.0 * cellSize, 1e-5);
+    _WriteTexture[pixel] = float4(divergence, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void JacobiPressure(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    int2 pixel = int2(dispatchId.xy);
+    float pressureLeft = _PressureTexture.Load(int3(ClampPixel(pixel + int2(-1, 0)), 0)).x;
+    float pressureRight = _PressureTexture.Load(int3(ClampPixel(pixel + int2(1, 0)), 0)).x;
+    float pressureDown = _PressureTexture.Load(int3(ClampPixel(pixel + int2(0, -1)), 0)).x;
+    float pressureUp = _PressureTexture.Load(int3(ClampPixel(pixel + int2(0, 1)), 0)).x;
+    float divergence = _DivergenceTexture.Load(int3(pixel, 0)).x;
+    float cellSize = _WorldSize / max(1.0, (float)_Resolution);
+    float pressure = (pressureLeft + pressureRight + pressureDown + pressureUp
+        - divergence * cellSize * cellSize) * 0.25;
+    _WriteTexture[pixel] = float4(pressure, 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void ProjectVelocity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    int2 pixel = int2(dispatchId.xy);
+    float pressureLeft = _PressureTexture.Load(int3(ClampPixel(pixel + int2(-1, 0)), 0)).x;
+    float pressureRight = _PressureTexture.Load(int3(ClampPixel(pixel + int2(1, 0)), 0)).x;
+    float pressureDown = _PressureTexture.Load(int3(ClampPixel(pixel + int2(0, -1)), 0)).x;
+    float pressureUp = _PressureTexture.Load(int3(ClampPixel(pixel + int2(0, 1)), 0)).x;
+    float cellSize = _WorldSize / max(1.0, (float)_Resolution);
+    float2 gradient = float2(pressureRight - pressureLeft, pressureUp - pressureDown)
+        / max(2.0 * cellSize, 1e-5);
+    float2 velocity = _VelocityTexture.Load(int3(pixel, 0)).xy - gradient;
+
+    if (pixel.x <= 0 || pixel.y <= 0 || pixel.x >= _Resolution - 1 || pixel.y >= _Resolution - 1)
+    {
+        velocity = 0.0;
+    }
+
+    _WriteTexture[pixel] = float4(clamp(velocity, -12.0, 12.0), 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void AdvectDensity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy)) return;
+
+    float2 uv = PixelUv(dispatchId.xy);
+    float2 velocity = SampleVelocityTexture(uv).xy;
+    float2 sourceUv = uv + _CenterDeltaUV - velocity * (_DeltaTime / max(_WorldSize, 0.001));
+    float density = SampleReadTexture(sourceUv).x;
+    density *= exp2(-_DeltaTime / max(_DensityHalfLife, 0.01));
+    _WriteTexture[dispatchId.xy] = float4(saturate(density), 0.0, 0.0, 0.0);
+}
+
+[numthreads(8, 8, 1)]
+void InjectDensity(uint3 dispatchId : SV_DispatchThreadID)
+{
+    if (!IsValidPixel(dispatchId.xy) || _StampStrength <= 0.0) return;
+
+    float2 uv = PixelUv(dispatchId.xy);
+    float2 worldPosition = _FieldCenter + (uv - 0.5) * _WorldSize;
+    float2 closest;
+    float wakeDistance = DistanceToSegment(worldPosition, _SegmentStart, _SegmentEnd, closest);
+    float wake = saturate(1.0 - wakeDistance / max(_WakeRadius, 0.01));
+    wake = wake * wake * (3.0 - 2.0 * wake) * _StampStrength;
+    float density = max(_DensityRW[dispatchId.xy].x, wake * _DensityInjection);
+    _DensityRW[dispatchId.xy] = float4(saturate(density), 0.0, 0.0, 0.0);
+}

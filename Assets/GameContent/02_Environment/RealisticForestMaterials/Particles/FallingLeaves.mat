@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FallingLeaves
   m_Shader: {fileID: 4800000, guid: 3bf6f18a79f67ff409849791b61e793f, type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 2100000, guid: 49334de6644da074cbc627fc13cd47d7, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -28,8 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _DetailStrength: 0.18
+    m_Floats: []
     m_Colors:
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 1, g: 0.17295581, b: 0.84161735, a: 1}
   m_BuildTextureStacks: []

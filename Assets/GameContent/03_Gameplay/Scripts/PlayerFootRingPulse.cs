@@ -29,6 +29,11 @@ namespace XiYouJi.Gameplay
                 return;
             }
 
+            if (propertyBlock == null)
+            {
+                propertyBlock = new MaterialPropertyBlock();
+            }
+
             float wave = Mathf.Sin(Time.time * pulseSpeed) * 0.5f + 0.5f;
             float scale = Mathf.Lerp(minimumScale, maximumScale, wave);
             float alpha = Mathf.Lerp(minimumAlpha, maximumAlpha, wave);
