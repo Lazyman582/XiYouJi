@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "\u5510\u50E7"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "\u5510\u50E7"
+    content: "      ly\uFF0C\u4F60\u53C8\u5728\u7FA4\u91CC\u642C\u77F3\u4E86"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+  - speaker: "\u5510\u50E7"
+    content: "\u51FA\u5BB6\u4EBA\u4E0D\u642C\u6784\u5F0F"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+  - speaker: ly
+    content: "\u6211\u662F\u4E43\u9F99"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u6211\u624D\u662F\u4E43\u9F99"
+    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    nextIndex: 0
+    choices: []
+  - speaker: "\u5510\u50E7"
+    content: "\u5927\u5BB6\u90FD\u662F\u4E43\u9F99"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u5BF9\u7684"
+      targetIndex: 5
+    - choiceText: "\u4E0D\u5BF9"
+      targetIndex: 6
+  - speaker: "\u5510\u50E7"
+    content: "\u597D\u8036"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u597D\u8036"
+      targetIndex: -1
+  - speaker: "\u5510\u50E7"
+    content: "\u6211\u54AC\u6B7B\u4F60"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u989D\u554A\u2014\u2014\u2014\u2014"
+      targetIndex: -1
+  title: 
+  author: 

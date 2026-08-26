@@ -29,26 +29,30 @@ public class SpeakerAvatar
 
 public class DialogueBlackboard : MonoBehaviour
 {
-    [SerializeField] public List<DialogueData> dialoguePieces = new List<DialogueData>();
+    [SerializeField] public DialogueDataContainer currentDialogue;   // 直接在Inspector拖拽
+    private int currentIndex = 0;
 
-    public int GetDialogueCount() => dialoguePieces.Count;
+   
+    public void SetDialogueData(DialogueDataContainer container)
+    {
+        currentDialogue = container;
+        currentIndex = 0;
+    }
+
+    public int GetDialogueCount() => currentDialogue.dialoguePieces.Count;
     // 如果只需要顺序访问，直接用 List 即可
     public DialogueData GetDialogue(int index)
     {
-        if (index >= 0 && index < dialoguePieces.Count)
-            return dialoguePieces[index];
-        Debug.LogWarning($"对话索引 {index} 超出范围 (0~{dialoguePieces.Count - 1})");
+        if (index >= 0 && index < currentDialogue.dialoguePieces.Count)
+            return currentDialogue.dialoguePieces[index];
+        Debug.LogWarning($"对话索引 {index} 超出范围 (0~{currentDialogue.dialoguePieces.Count - 1})");
         return null;
     }
-    public void ClearDialogueData()
-    {
-        dialoguePieces?.Clear(); // 或 dialoguePieces = null;
-       
-    }
+    
     public bool HasDialogue(int index)
     {
-        return index >= 0 && index < dialoguePieces.Count;
+        return index >= 0 && index < currentDialogue.dialoguePieces.Count;
     }
 
-    public int Count => dialoguePieces.Count;
+    public int Count => currentDialogue.dialoguePieces.Count;
 }

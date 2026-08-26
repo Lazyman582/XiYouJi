@@ -60,7 +60,7 @@ namespace XiYouJi.Gameplay
                 RememberAllowedPosition();
             }
         }
-
+    
         private void Update()
         {
             if (inputCamera == null)
