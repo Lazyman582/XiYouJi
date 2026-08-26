@@ -297,10 +297,10 @@ RectTransform:
   - {fileID: 594928133}
   m_Father: {fileID: 797940507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 541}
+  m_SizeDelta: {x: 450, y: 1082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504917713
 MonoBehaviour:
@@ -660,6 +660,17 @@ MonoBehaviour:
     choices:
     - choiceText: "\u5BF9\u7684"
       targetIndex: -1
+    - choiceText: "\u4E0D\u5BF9"
+      targetIndex: 3
+  - speaker: "\u4E43\u9F99"
+    content: "ly\u662F\u4E2A\u4E43\u9F99"
+    portrait: {fileID: 21300000, guid: 22e835abcd4cb44ad8e39c6fab21c30f, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u5BF9\u7684"
+      targetIndex: -1
+    - choiceText: "\u4E0D\u5BF9"
+      targetIndex: 3
 --- !u!1 &987314342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,10 +1061,10 @@ RectTransform:
   m_Father: {fileID: 490018291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -0.000030517578, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1875935420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1085,10 +1096,10 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 7
   m_Spacing: 30
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
