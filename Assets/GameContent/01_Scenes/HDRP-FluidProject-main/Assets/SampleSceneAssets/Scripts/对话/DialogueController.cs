@@ -12,7 +12,7 @@ public class DialogueController : MonoBehaviour
     private int currentIndex = 0;
     [SerializeField]public int CurrentIndex => currentIndex;
     public static event System.Action OnDialogueStart;
-    public static event System.Action OnDialogueEnd;
+   
 
     private void Awake()
     {
