@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-using EasyTextEffects;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
+
 
 public class DialogueUIController : MonoBehaviour
 {
@@ -167,8 +162,18 @@ public class DialogueUIController : MonoBehaviour
 
         // 文本特效（如果有）
         TextEffect effect = contentText.GetComponent<TextEffect>();
-        if (effect != null)
-            effect.StartManualEffects();
+      
+        if (effect != null && effect.isActiveAndEnabled)
+        {
+            try
+            {
+                effect.StartManualEffects();
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogWarning($"启动文本特效失败: {e.Message}");
+            }
+        }
     }
 
     // 清除选项按钮

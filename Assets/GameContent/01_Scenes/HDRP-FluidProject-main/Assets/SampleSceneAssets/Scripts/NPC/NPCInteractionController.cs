@@ -15,14 +15,14 @@ public class NPCInteractionController : MonoBehaviour
     {
         // 订阅对话事件
         DialogueController.OnDialogueStart += OnDialogueStart;
-        DialogueController.OnDialogueEnd += OnDialogueEnd;
+        DialogueUIController.OnDialogueEnd += OnDialogueEnd;
     }
 
     private void OnDisable()
     {
         // 取消订阅，防止内存泄漏
         DialogueController.OnDialogueStart -= OnDialogueStart;
-        DialogueController.OnDialogueEnd -= OnDialogueEnd;
+        DialogueUIController.OnDialogueEnd -= OnDialogueEnd;
     }
 
     private void OnDialogueStart()
