@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/GameContent/01_Scenes/tool/talksysteam.unity.meta
+guid: fcd6883b56bffeb41a0f994ad233da4d
+========
 guid: 50f68eb7289e25f428970db6729e20bb
 folderAsset: yes
+>>>>>>>> 046dd1d1a75282e61bc00efa24dfa499493bb155:Assets/UI/Picture.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
