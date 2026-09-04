@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 797940509}
   - component: {fileID: 797940508}
   - component: {fileID: 797940510}
+  - component: {fileID: 797940511}
   m_Layer: 5
   m_Name: "\u5BF9\u8BDD\u6846"
   m_TagString: Untagged
@@ -588,6 +589,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &797940511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797940506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf309d4d5d1e1cd47b79392922527057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetButton: {fileID: 797940510}
+  cooldownTime: 10
 --- !u!1 &987314342
 GameObject:
   m_ObjectHideFlags: 0

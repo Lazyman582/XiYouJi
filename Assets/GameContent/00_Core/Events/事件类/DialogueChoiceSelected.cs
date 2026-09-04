@@ -21,7 +21,13 @@ namespace XiYouJi.Events
         }
     }
 
-   
+    public struct SceneTriggerEvent
+    {
+        public string EventKey;   // 事件标识符，例如 "WaterAppear"、"DoorOpen"
+        // 如果需要，可以增加其他字段，例如携带数值或对象引用
+        // public int IntParam;
+        // public GameObject TargetObject;
+    }
     public struct DialogueStarted { public DialogueData Container; }
     public struct DialogueEnded { }
 }

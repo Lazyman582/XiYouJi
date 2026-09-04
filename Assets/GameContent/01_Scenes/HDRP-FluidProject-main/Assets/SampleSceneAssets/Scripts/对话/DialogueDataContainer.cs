@@ -8,5 +8,5 @@ public class DialogueDataContainer:ScriptableObject
     public List<DialogueData> dialoguePieces = new List<DialogueData>();
     public string title;
     public string author;
-    // 其他元数据
+
 }

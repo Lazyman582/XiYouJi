@@ -19,6 +19,9 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private GameObject dialoguePanelRoot; // 对话面板根节点
     [SerializeField] private UnityEngine.UI.Image avatarImage;            // 说话人头像
 
+
+    private float lastNextClickTime = -1f;
+    private const float NEXT_CLICK_COOLDOWN = 0.8f;
     // 这个变量保留，用途不明，不动它
     public GameObject gg;
 
@@ -75,6 +78,8 @@ public class DialogueUIController : MonoBehaviour
         }
         Debug.Log($"[对话调试] 当前索引: {controller.CurrentIndex} ");
         // 添加对话条目
+        BroadcastIfNeeded(data);
+
         AddDialogueEntry(data.speaker, data.content, data.portrait);
 
         // 清除旧的选项按钮
@@ -166,6 +171,24 @@ public class DialogueUIController : MonoBehaviour
         Destroy(temp);
     }
     // 添加一条对话条目
+
+    private void BroadcastIfNeeded(DialogueData data)
+    {
+        // 1. 检查是否勾选了广播，并且事件名不为空
+        if (data == null || !data.broadcastOnShow || string.IsNullOrEmpty(data.broadcastEventKey))
+            return;
+
+        // 2. 发布事件（这里借用现有的 EventBus，但定义一个泛型，或者直接用字符串作为事件）
+        // 注意：EventBus 是泛型的，你的 EventBus<T> 需要 T 是结构体。
+        // 最简单的办法：定义一个通用的 GameEvent 结构体，只包含字符串 Key。
+        // 或者，为了不改动 EventBus，我们发布一个具体的场景事件。
+
+        // 这里演示一种通用做法：发布一个包含 Key 的事件
+        // 假设你定义了 public struct SceneTriggerEvent { public string EventKey; }
+        EventBus<SceneTriggerEvent>.Publish(new SceneTriggerEvent { EventKey = data.broadcastEventKey });
+
+        Debug.Log($"[对话系统] 广播场景事件：{data.broadcastEventKey}");
+    }
     private void AddDialogueEntry(string speaker, string content, Sprite portrait)
     {
         GameObject entry = Instantiate(entryTemplate, contentParent);
@@ -244,6 +267,9 @@ public class DialogueUIController : MonoBehaviour
     // 点击“继续”按钮
     public void OnNextButtonClicked()
     {
+        if (Time.unscaledTime - lastNextClickTime < NEXT_CLICK_COOLDOWN)
+            return;
+        lastNextClickTime = Time.unscaledTime;
         var controller = DialogueController.Instance;
         if (controller == null) return;
         if (controller.IsEnd()) return;

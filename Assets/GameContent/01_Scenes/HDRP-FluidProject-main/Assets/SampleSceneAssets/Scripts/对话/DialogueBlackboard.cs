@@ -11,7 +11,10 @@ public class DialogueData
     public Sprite portrait;
     public int nextIndex = -1; // -1 表示无跳转，按顺序+1
     public List<DialogueChoice> choices = new List<DialogueChoice>();
-    
+    // 其他元数据
+    [Header("对话触发事件 (广播)")]
+    public bool broadcastOnShow = false;      // 显示这句话时是否广播
+    public string broadcastEventKey = "";     // 要广播的事件名称（例如 "WaterAppear"）
 }
 [System.Serializable]
 public class DialogueChoice
