@@ -30,5 +30,5 @@ Material:
     - _Radius: 0.72
     - _Thickness: 0.07
     m_Colors:
-    - _Color: {r: 0.92941695, g: 0.9308176, b: 0.1902614, a: 1}
+    - _Color: {r: 1, g: 0.97150326, b: 0, a: 1}
   m_BuildTextureStacks: []
