@@ -1,9 +1,12 @@
 ﻿using EasyTextEffects;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using XiYouJi.Events;
+using static System.Net.Mime.MediaTypeNames;
 
 
 public class DialogueUIController : MonoBehaviour
@@ -14,7 +17,7 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private Button nextButton;            // “继续”按钮
     [SerializeField] private Button choiceButtonTemplate;  // 选项按钮模板
     [SerializeField] private GameObject dialoguePanelRoot; // 对话面板根节点
-    [SerializeField] private Image avatarImage;            // 说话人头像
+    [SerializeField] private UnityEngine.UI.Image avatarImage;            // 说话人头像
 
     // 这个变量保留，用途不明，不动它
     public GameObject gg;
@@ -42,6 +45,7 @@ public class DialogueUIController : MonoBehaviour
     {
         if (nextButton != null)
             nextButton.onClick.AddListener(OnNextButtonClicked);
+        PrewarmTextEffect();
         ClosePanel();
     }
 
@@ -81,7 +85,7 @@ public class DialogueUIController : MonoBehaviour
         {
             // 有选项：隐藏“继续”按钮，创建选项按钮
             nextButton.interactable = false;
-         
+
 
             var choices = controller.GetCurrentChoices();
             foreach (var choice in choices)
@@ -91,11 +95,20 @@ public class DialogueUIController : MonoBehaviour
                 btn.GetComponentInChildren<TMP_Text>().text = choice.choiceText;
 
                 int target = choice.targetIndex;
+                int current = controller.CurrentIndex;
+                string text = choice.choiceText;
+                DialogueData container = controller.GetCurrentDialogue();
                 btn.onClick.AddListener(() =>
                 {
                     ClearChoiceButtons(); // 立即移除选项按钮
                     if (target == -1)
                     {
+                        if (choice.broadcastEvent)  // 只有勾选了才广播
+                        {
+                            EventBus<DialogueChoiceSelected>.Publish(
+                                new DialogueChoiceSelected(text, target, current, container)
+                            );
+                        }
                         // 选项标记为结束对话
                         EndDialogue();
                         Debug.Log("选项结束对话");
@@ -103,7 +116,12 @@ public class DialogueUIController : MonoBehaviour
                     else
                     {
                         // 跳转到目标索引
-                       
+                        if (choice.broadcastEvent)  // 只有勾选了才广播
+                        {
+                            EventBus<DialogueChoiceSelected>.Publish(
+                                new DialogueChoiceSelected(text, target, current, container)
+                            );
+                        }
                         controller.JumpToDialogue(target);
                         ShowCurrentDialogue(); // 刷新显示
                     }
@@ -130,50 +148,53 @@ public class DialogueUIController : MonoBehaviour
             // 如果你想自动结束，可以调用 EndDialogue();
         }
     }
-
+    private void PrewarmTextEffect()
+    {
+        if (entryTemplate == null) return;
+        GameObject temp = Instantiate(entryTemplate, contentParent);
+        temp.SetActive(false);
+        TMP_Text tempText = temp.transform.Find("ContentText")?.GetComponent<TMP_Text>();
+        if (tempText != null)
+        {
+            TextEffect effect = tempText.GetComponent<TextEffect>();
+            if (effect != null && effect.isActiveAndEnabled)
+            {
+                effect.StartManualEffects();
+            }
+        }
+        // 不销毁，保留作为隐藏模板，但这样会产生多余对象，可以销毁
+        Destroy(temp);
+    }
     // 添加一条对话条目
     private void AddDialogueEntry(string speaker, string content, Sprite portrait)
     {
         GameObject entry = Instantiate(entryTemplate, contentParent);
-        entry.SetActive(true);
-        historyEntries.Add(entry); // 存储以便清空
+        historyEntries.Add(entry);
 
         Transform nameTrans = entry.transform.Find("NameText");
         Transform contentTrans = entry.transform.Find("ContentText");
 
-        if (nameTrans == null || contentTrans == null)
-        {
-            Debug.LogError("预制体结构错误：缺少 NameText 或 ContentText");
-            return;
-        }
+        if (nameTrans == null || contentTrans == null) return;
 
         TMP_Text nameText = nameTrans.GetComponent<TMP_Text>();
         TMP_Text contentText = contentTrans.GetComponent<TMP_Text>();
+        TextEffect effect = contentText.GetComponent<TextEffect>();
 
         nameText.text = string.IsNullOrEmpty(speaker) ? "" : $"{speaker}:";
-        contentText.text = content;
-        contentText.ForceMeshUpdate();
+        contentText.text = "            " + content;
 
-        // 更新头像
-        if (avatarImage != null)
-        {
-            avatarImage.sprite = portrait != null ? portrait : null;
-        }
+        Canvas.ForceUpdateCanvases();
+        contentText.ForceMeshUpdate(true, true);
+        if (effect != null) effect.Refresh();
 
-        // 文本特效（如果有）
-        TextEffect effect = contentText.GetComponent<TextEffect>();
-      
+        StartCoroutine(StartEffectNextFrame(effect));
+    }
+
+    private IEnumerator StartEffectNextFrame(TextEffect effect)
+    {
+        yield return null;
         if (effect != null && effect.isActiveAndEnabled)
-        {
-            try
-            {
-                effect.StartManualEffects();
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogWarning($"启动文本特效失败: {e.Message}");
-            }
-        }
+            effect.StartManualEffects();
     }
 
     // 清除选项按钮

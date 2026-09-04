@@ -18,6 +18,7 @@ public class DialogueChoice
 {
     public string choiceText;   // 选项显示的文字
     public int targetIndex;     // 选择后跳转到的对话索引
+    public bool broadcastEvent = false;
 }
 [System.Serializable]
 public class SpeakerAvatar

@@ -5,9 +5,38 @@ using UnityEngine.SceneManagement;
 using static UnityEngine.Timeline.AnimationPlayableAsset;
 
 
-/// <summary>
-/// 场景管理工具 - 支持按钮调用含参方法
-/// </summary>
+public static class SceneTransitionData
+{
+    private static Dictionary<string, object> _params = new Dictionary<string, object>();
+
+    public static void SetParam(string key, object value)
+    {
+        _params[key] = value;
+    }
+
+    public static T GetParam<T>(string key, T defaultValue )
+    {
+        Debug.LogError(_params["playerID"]);
+        if (_params.TryGetValue(key, out object val) && val is T tVal)
+       
+            return tVal;
+        else
+        return defaultValue;
+    }
+
+    public static bool HasParam(string key) => _params.ContainsKey(key);
+
+    public static void ClearParam(string key)
+    {
+        if (_params.ContainsKey(key))
+            _params.Remove(key);
+    }
+
+    public static void ClearAll()
+    {
+        _params.Clear();
+    }
+}
 public class SceneLoader : MonoBehaviour
 {
     [Header("加载设置")]
@@ -17,11 +46,12 @@ public class SceneLoader : MonoBehaviour
     [Header("加载提示UI（可选）")]
     public GameObject loadingPanel; // 可拖拽一个加载中的转圈UI
 
+    [Header("加载模式")]
     public LoadSceneMode loadMode = LoadSceneMode.Additive;
-    /// <summary>
-    /// 【核心方法】对外公开，供按钮调用的场景跳转方法
-    /// 参数：sceneName - 目标场景名称（必须与Build Settings中的名称一致）
-    /// </summary>
+
+    // --------------------------------------------------
+    // 1. 基础加载（无参）
+    // --------------------------------------------------
     public void LoadScene(string sceneName)
     {
         if (string.IsNullOrEmpty(sceneName))
@@ -58,9 +88,48 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 异步加载协程（附带显示加载面板）
-    /// </summary>
+    // --------------------------------------------------
+    // 2. 带参加载（按钮可用，但只支持一个字符串参数）
+    // --------------------------------------------------
+    public void LoadScene(string sceneName, string paramKey, string paramValue)
+    {
+        SceneTransitionData.SetParam(paramKey, paramValue);
+        LoadScene(sceneName);
+    }
+
+    // 重载：如果需要传递多个参数，可以传JSON字符串，目标场景解析
+    public void LoadSceneWithJson(string sceneName, string jsonParams)
+    {
+        // 例如 jsonParams = "{\"level\":3,\"mode\":\"hard\"}"
+        // 在目标场景用 JsonUtility 或 LitJson 解析
+        SceneTransitionData.SetParam("_json", jsonParams);
+        LoadScene(sceneName);
+    }
+
+    // --------------------------------------------------
+    // 3. 切换场景（加载新场景，并自动卸载旧场景）
+    // --------------------------------------------------
+    public void SwitchToScene(string sceneName)
+    {
+        StartCoroutine(SwitchSceneCoroutine(sceneName));
+    }
+
+    private IEnumerator SwitchSceneCoroutine(string sceneName)
+    {
+        // 加载新场景（异步）
+        yield return LoadSceneAsyncCoroutine(sceneName);
+
+        // 卸载当前激活场景（如果它不是新场景）
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        if (currentSceneName != sceneName)
+        {
+            UnloadBaseScene(currentSceneName, sceneName);
+        }
+    }
+
+    // --------------------------------------------------
+    // 4. 异步加载协程（内部使用，可等待）
+    // --------------------------------------------------
     private IEnumerator LoadSceneAsyncCoroutine(string sceneName)
     {
         if (loadingPanel != null)
@@ -81,7 +150,6 @@ public class SceneLoader : MonoBehaviour
         // 允许场景激活（Unity 内部激活）
         operation.allowSceneActivation = true;
 
-        // ---------- 【关键新增】加载完成后，自动切换激活场景 ----------
         // 如果是叠加（Additive）模式，需要手动把激活场景切到新场景
         if (loadMode == LoadSceneMode.Additive)
         {
@@ -99,7 +167,6 @@ public class SceneLoader : MonoBehaviour
                 Debug.LogWarning($"【场景管理】场景 {sceneName} 加载后无效，无法切换激活场景");
             }
         }
-        // 如果是 Single 模式，Unity 会自动切换激活场景，无需手动处理
         else
         {
             Debug.Log($"【场景管理】Single 模式加载完成，当前激活场景：{SceneManager.GetActiveScene().name}");
@@ -109,6 +176,9 @@ public class SceneLoader : MonoBehaviour
             loadingPanel.SetActive(false);
     }
 
+    // --------------------------------------------------
+    // 5. 卸载场景
+    // --------------------------------------------------
     public void UnloadBaseScene(string baseSceneName, string newActiveSceneName)
     {
         // 1. 获取场景引用并校验
@@ -127,7 +197,7 @@ public class SceneLoader : MonoBehaviour
             return;
         }
 
-        // 2. 【关键步骤】将激活场景切换给场景2或场景3，防止实例化报错
+        // 2. 【关键步骤】将激活场景切换给目标场景，防止实例化报错
         SceneManager.SetActiveScene(targetActiveScene);
         Debug.Log($"【场景管理】激活场景已切换至：{newActiveSceneName}");
 
@@ -141,23 +211,9 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    private IEnumerator OnBaseSceneUnloaded(AsyncOperation op, string sceneName)
-    {
-        yield return op;
-
-        // 卸载完成后，强烈建议主动释放一次未使用的资源，节省内存
-        Resources.UnloadUnusedAssets();
-        Debug.Log($"【场景管理】场景 {sceneName} 已彻底卸载并清理内存。");
-    }
-
-    // ------------------- 超便捷重载方法 -------------------
-    /// <summary>
-    /// 重载：如果你懒得敲新激活场景名，默认把当前激活场景切换给“第一个找到的已加载场景”。
-    /// 但不推荐，还是显式指定最安全。
-    /// </summary>
+    // 重载：自动寻找可用的激活场景
     public void UnloadBaseScene(string baseSceneName)
     {
-        // 尝试寻找一个不是基础场景的已加载场景作为新激活场景
         for (int i = 0; i < SceneManager.sceneCount; i++)
         {
             Scene s = SceneManager.GetSceneAt(i);
@@ -168,5 +224,14 @@ public class SceneLoader : MonoBehaviour
             }
         }
         Debug.LogError($"【场景管理】找不到除 {baseSceneName} 之外的其他已加载场景，无法安全卸载。");
+    }
+
+    private IEnumerator OnBaseSceneUnloaded(AsyncOperation op, string sceneName)
+    {
+        yield return op;
+
+        // 卸载完成后，强烈建议主动释放一次未使用的资源，节省内存
+        Resources.UnloadUnusedAssets();
+        Debug.Log($"【场景管理】场景 {sceneName} 已彻底卸载并清理内存。");
     }
 }
