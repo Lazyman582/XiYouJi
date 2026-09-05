@@ -8,7 +8,7 @@ public class DialogueController : MonoBehaviour
     public static DialogueController Instance { get; private set; }
 
     [Header("当前对话数据")]
-    private DialogueDataContainer currentContainer;
+    public DialogueDataContainer currentContainer;
     private int currentIndex = 0;
     [SerializeField]public int CurrentIndex => currentIndex;
     public static event System.Action OnDialogueStart;

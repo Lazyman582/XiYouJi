@@ -18,6 +18,7 @@ public class DialogueUIController : MonoBehaviour
     [SerializeField] private Button choiceButtonTemplate;  // 选项按钮模板
     [SerializeField] private GameObject dialoguePanelRoot; // 对话面板根节点
     [SerializeField] private UnityEngine.UI.Image avatarImage;            // 说话人头像
+    [SerializeField] private ScrollRect scrollRect;          // 滚动视图（用于自动滚到最新一条）
 
 
     private float lastNextClickTime = -1f;
@@ -81,6 +82,9 @@ public class DialogueUIController : MonoBehaviour
         BroadcastIfNeeded(data);
 
         AddDialogueEntry(data.speaker, data.content, data.portrait);
+
+        // 新条目可能比视口高，滚到最新一条
+        StartCoroutine(ScrollToBottom());
 
         // 清除旧的选项按钮
         ClearChoiceButtons();
@@ -203,12 +207,21 @@ public class DialogueUIController : MonoBehaviour
         TMP_Text contentText = contentTrans.GetComponent<TMP_Text>();
         TextEffect effect = contentText.GetComponent<TextEffect>();
 
-        nameText.text = string.IsNullOrEmpty(speaker) ? "" : $"{speaker}:";
+        // 说话人为空时隐藏名字行，气泡只显示正文
+        bool showName = !string.IsNullOrEmpty(speaker);
+        nameText.text = showName ? $"{speaker}:" : "";
+        if (nameText.gameObject.activeSelf != showName)
+            nameText.gameObject.SetActive(showName);
+
         contentText.text = "" + content;
 
         Canvas.ForceUpdateCanvases();
         contentText.ForceMeshUpdate(true, true);
         if (effect != null) effect.Refresh();
+
+        // 按文字内容重新计算气泡尺寸
+        var sizer = entry.GetComponent<ChatBubbleAutoSize>();
+        if (sizer != null) sizer.Refresh();
 
         StartCoroutine(StartEffectNextFrame(effect));
     }
@@ -295,9 +308,9 @@ public class DialogueUIController : MonoBehaviour
     private IEnumerator ScrollToBottom()
     {
         yield return new WaitForEndOfFrame();
-        var scrollRect = GetComponentInParent<ScrollRect>();
-        if (scrollRect != null)
-            scrollRect.normalizedPosition = new Vector2(0, 0);
+        var target = scrollRect != null ? scrollRect : GetComponentInParent<ScrollRect>();
+        if (target != null)
+            target.normalizedPosition = new Vector2(0, 0);
     }
 
     private void OnDestroy()
