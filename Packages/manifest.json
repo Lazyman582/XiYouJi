@@ -1,4 +1,4 @@
-{
+﻿{
   "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
     "com.coplaydev.unity-mcp": "file:_mcp-unity-source/MCPForUnity",

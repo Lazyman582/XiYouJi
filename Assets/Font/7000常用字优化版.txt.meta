@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/DOTweenSettings.asset.meta
+guid: 88c572368995bb74fa40d4a2520eda7b
+NativeFormatImporter:
+========
 guid: 832b0589f43ee744e9b3052b5aea7041
 TextScriptImporter:
+>>>>>>>> d7b90c5c61f3e66139d5da925327fd22e493ebc8:Assets/Font/7000常用字优化版.txt.meta
   externalObjects: {}
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Plugins.meta
+guid: 17ad6d0c7f989644daf6e891feb5d3ea
+========
 guid: 0fed125e42360f24392e89744ec7c96c
+>>>>>>>> d7b90c5c61f3e66139d5da925327fd22e493ebc8:Assets/GameContent/00_Core/Events/事件类.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
