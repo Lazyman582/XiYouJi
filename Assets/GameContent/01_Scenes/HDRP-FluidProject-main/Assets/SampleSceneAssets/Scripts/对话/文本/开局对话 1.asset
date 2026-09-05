@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "\u5F00\u5C40\u5BF9\u8BDD 1"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u4E0D\u8FDC\u5904\u6709\u4E00\u7247\u6843\u56ED\uFF0C\u5E08\u5085"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u563F\u563F\u563F,\u592A\u597D\u4E86\u3002"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5996\u602A\uFF01"
+    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 1
+    broadcastEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u6211\u8BF4,\u5996\u602A\u5462\uFF1F"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u60F3\u5FC5\u662F\u8FC7\u8DEF\u7684\u5996\u602A\u3002"
+    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u5475\u5475,\u5E08\u5144,\u4F60\u53EF\u771F\u4F1A\u8BF4\u5634.\u8FD9\u5996\u602A\u8FD8\u6709\u8FC7\u8DEF\u7684\uFF0C\u957F\u4F4F\u7684."
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u6C99\u548C\u5C1A"
+    content: "\u4E8C\u5E08\u5144\uFF0C\u5927\u5E08\u5144\u8BF4\u5F97\u5BF9\u5440\uFF0C\u8FD9\u8352\u5C71\u91CE\u5CAD\u7684\u8FD8\u662F\u5C0F\u5FC3\u4E3A\u662F\u3002"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u609F\u7A7A\uFF0C\u65E2\u7136\u6CA1\u4E8B\u4E86\uFF0C\r\n\u90A3\u5C31\u5FEB\u53BB\u5427\u3002"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u55EF\uFF0C\u60A8\u5148\u5750\u3002"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\uFF0C\u6211\u4E0D\u56DE\u6765\uFF0C\u4F60\u4EEC\u5343\u4E07\u4E0D\u53EF\u8D70\u51FA\u5708\u5916\u3002\r\n"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "\u6C99\u548C\u5C1A"
+    content: "\u5927\u5E08\u5144\u653E\u5FC3\u3002"
+    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
+      targetIndex: -1
+      broadcastEvent: 1
+    broadcastOnShow: 0
+    broadcastEventKey: showtaozi
+  title: 
+  author: 

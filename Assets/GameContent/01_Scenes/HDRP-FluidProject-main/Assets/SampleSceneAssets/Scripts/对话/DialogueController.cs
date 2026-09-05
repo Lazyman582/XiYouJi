@@ -8,7 +8,7 @@ public class DialogueController : MonoBehaviour
     public static DialogueController Instance { get; private set; }
 
     [Header("当前对话数据")]
-    private DialogueDataContainer currentContainer;
+    public DialogueDataContainer currentContainer;
     private int currentIndex = 0;
     [SerializeField]public int CurrentIndex => currentIndex;
     public static event System.Action OnDialogueStart;
@@ -52,6 +52,7 @@ public class DialogueController : MonoBehaviour
             Debug.LogError("试图开始空对话容器");
             return;
         }
+      
         currentContainer = container;
         currentIndex = 0;
         OnDialogueStart?.Invoke();
@@ -85,7 +86,7 @@ public class DialogueController : MonoBehaviour
             currentIndex = targetIndex;
     }
 
-    public void ResetDialogue() => currentIndex = 0;
+    public void ResetDialogue() { currentIndex = 0; isBlocked = false; }
 
     public bool IsEnd()
     {
