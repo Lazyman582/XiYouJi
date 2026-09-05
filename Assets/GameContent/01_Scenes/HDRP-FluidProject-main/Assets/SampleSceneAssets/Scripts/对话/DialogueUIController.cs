@@ -265,13 +265,26 @@ public class DialogueUIController : MonoBehaviour
     }
 
     // 点击“继续”按钮
+
+    public void BlockProceed()
+    {
+        if (nextButton != null)
+            nextButton.interactable = false;
+    }
+
+    public void UnblockProceed()
+    {
+        if (nextButton != null)
+            nextButton.interactable = true;
+    }
     public void OnNextButtonClicked()
     {
         if (Time.unscaledTime - lastNextClickTime < NEXT_CLICK_COOLDOWN)
             return;
         lastNextClickTime = Time.unscaledTime;
         var controller = DialogueController.Instance;
-        if (controller == null) return;
+        if (controller == null || controller.IsBlocked) return;
+     
         if (controller.IsEnd()) return;
 
         controller.NextDialogue();
