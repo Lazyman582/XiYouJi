@@ -12,8 +12,27 @@ public class DialogueController : MonoBehaviour
     private int currentIndex = 0;
     [SerializeField]public int CurrentIndex => currentIndex;
     public static event System.Action OnDialogueStart;
-   
 
+    private bool isBlocked = false;
+
+    public bool IsBlocked => isBlocked;
+
+    public void BlockProceed()
+    {
+        isBlocked = true;
+        Debug.Log("[DialogueController] 对话流程被阻塞");
+    }
+
+    public void UnblockProceed()
+    {
+        isBlocked = false;
+        Debug.Log("[DialogueController] 对话流程已恢复");
+        // 恢复后自动继续显示下一条
+        if (DialogueUIController.Instance != null)
+        {
+            DialogueUIController.Instance.ShowCurrentDialogue();
+        }
+    }
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -47,6 +66,11 @@ public class DialogueController : MonoBehaviour
 
     public void NextDialogue()
     {
+        if (isBlocked)
+        {
+            Debug.Log("[DialogueController] 对话被阻塞，无法继续");
+            return;
+        }
         if (currentContainer == null) return;
         int next = currentIndex + 1;
         if (next < currentContainer.dialoguePieces.Count)
