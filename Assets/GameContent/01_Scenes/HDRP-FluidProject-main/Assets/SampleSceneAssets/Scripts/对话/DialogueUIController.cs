@@ -204,7 +204,7 @@ public class DialogueUIController : MonoBehaviour
         TextEffect effect = contentText.GetComponent<TextEffect>();
 
         nameText.text = string.IsNullOrEmpty(speaker) ? "" : $"{speaker}:";
-        contentText.text = "            " + content;
+        contentText.text = "" + content;
 
         Canvas.ForceUpdateCanvases();
         contentText.ForceMeshUpdate(true, true);

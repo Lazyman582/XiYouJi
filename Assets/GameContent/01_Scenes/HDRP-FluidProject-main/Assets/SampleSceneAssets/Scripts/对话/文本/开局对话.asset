@@ -234,13 +234,6 @@ MonoBehaviour:
     content: "\u5927\u5E08\u5144\u653E\u5FC3\u3002"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
     nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: 
-    content: 
-    portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
-    nextIndex: 0
     choices:
     - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
       targetIndex: -1

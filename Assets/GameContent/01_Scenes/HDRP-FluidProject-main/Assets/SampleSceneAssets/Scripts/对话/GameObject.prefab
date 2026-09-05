@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 225.03821, y: 1023.84076}
-  m_SizeDelta: {x: 450.0763, y: 116.3182}
+  m_AnchoredPosition: {x: 225.03821, y: 1003.6455}
+  m_SizeDelta: {x: 450.0763, y: 156.7086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4804367289074382721
 GameObject:
@@ -71,7 +71,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107.59, y: -18.743}
+  m_AnchoredPosition: {x: -116, y: -2}
   m_SizeDelta: {x: 215.19, y: 153.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6917779919840764753
@@ -104,8 +104,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1dc01b62031206e42ac2a86b4065fda3, type: 2}
-  m_sharedMaterial: {fileID: -5655900751440967982, guid: 1dc01b62031206e42ac2a86b4065fda3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4bd964a353cdf6b4ab3ee4979baf16d7, type: 2}
+  m_sharedMaterial: {fileID: -6865851892980121535, guid: 4bd964a353cdf6b4ab3ee4979baf16d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.1539917, w: 103.41048}
+  m_margin: {x: 0, y: 0, z: 53.779358, w: 103.41048}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -206,7 +206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.805, y: -14.612}
+  m_AnchoredPosition: {x: 4.805, y: 1}
   m_SizeDelta: {x: 439.98, y: 145.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9031823226962206595
@@ -257,8 +257,8 @@ MonoBehaviour:
     my masterpiece to the grown-ups, and asked them whether the drawing frightened
     them.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1dc01b62031206e42ac2a86b4065fda3, type: 2}
-  m_sharedMaterial: {fileID: -5655900751440967982, guid: 1dc01b62031206e42ac2a86b4065fda3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4bd964a353cdf6b4ab3ee4979baf16d7, type: 2}
+  m_sharedMaterial: {fileID: -6865851892980121535, guid: 4bd964a353cdf6b4ab3ee4979baf16d7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.61309814, y: 0, z: 0, w: 0}
+  m_margin: {x: 121.202896, y: 0, z: 0.10412598, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
