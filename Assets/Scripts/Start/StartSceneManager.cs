@@ -10,6 +10,8 @@ public class StartSceneManager : MonoBehaviour
     public GameObject mainMenuPanel;
     public GameObject introductionPanel;
     public GameObject experienceSelectPanel;
+    public GameObject settingsPanel;
+    public GameObject creditsPanel;
     public GameObject backButton;
 
     private GameObject currentPanel;
@@ -48,6 +50,29 @@ public class StartSceneManager : MonoBehaviour
     {
         SwitchPanel(experienceSelectPanel);
         if (backButton != null) backButton.SetActive(true);
+    }
+
+    public void ShowSettings()
+    {
+        SwitchPanel(settingsPanel);
+        // 设置界面自带“返回主界面”按钮，隐藏全局返回键避免逻辑冲突
+        if (backButton != null) backButton.SetActive(false);
+    }
+
+    public void ShowCredits()
+    {
+        SwitchPanel(creditsPanel);
+        if (backButton != null) backButton.SetActive(false);
+    }
+
+    // 退出游戏；编辑器下退出 Play 模式，方便开发期使用
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     public void GoBack()
