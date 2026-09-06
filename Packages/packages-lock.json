@@ -1,17 +1,10 @@
 {
   "dependencies": {
     "com.coplaydev.unity-mcp": {
-      "version": "file:_mcp-unity-source/MCPForUnity",
+      "version": "file:com.coplaydev.unity-mcp",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.imageconversion": "1.0.0",
-        "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.physics2d": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0",
-        "com.unity.modules.screencapture": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.unity.test-framework": "1.1.31"
       }

@@ -10,9 +10,10 @@ public class ModuleMenuController : MonoBehaviour
 
     private void Start()
     {
-        // The first two buttons use persistent scene events. Only the placeholder
-        // project button is registered here so navigation is never invoked twice.
-        if (projectButton != null)
+        // The first two buttons use persistent scene events. ModuleBtn_2 is now
+        // handled by UISwitcher when the quiz UI is present; keep the placeholder
+        // only as a fallback for scenes that do not contain the quiz module.
+        if (projectButton != null && FindObjectOfType<UISwitcher>() == null)
         {
             Button btn = projectButton.GetComponent<Button>();
             if (btn != null) btn.onClick.AddListener(ShowProjectPlaceholder);
