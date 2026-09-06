@@ -10,6 +10,11 @@ public class DialogueToggle : MonoBehaviour
 
 
 
+    private void Start()
+    {
+        var found = FindObjectOfType<PointClickNavController>();
+        target = found;
+    }
     private void OnEnable()
     {
         DialogueController.OnDialogueStart += OnStart;
