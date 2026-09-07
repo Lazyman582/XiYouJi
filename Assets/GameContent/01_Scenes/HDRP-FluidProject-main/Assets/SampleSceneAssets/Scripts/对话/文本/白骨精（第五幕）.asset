@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "白骨精（第五幕）"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "白骨精"
+    content: "好猴王，着然有眼！我那般变了去，他也还认得我。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "这些和尚，他去得快，若过此山，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "西下四十里，就不归我所管了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "若是被别处妖魔捞去了，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "只怕笑破他人之口，我还下去戏他一戏。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices:
+    - choiceText: "结束对话"
+      targetIndex: -1
+      broadcastEvent: 0
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  title: 
+  author: 

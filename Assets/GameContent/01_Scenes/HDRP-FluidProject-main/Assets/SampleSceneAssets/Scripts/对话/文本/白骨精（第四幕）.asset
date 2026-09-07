@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "白骨精（第四幕）"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "白骨精"
+    content: "女儿，你在哪儿啊？女儿……"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "师父！不好了！那妈妈儿来寻闺女了！"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "二师兄不要乱说，这荒山野岭的，哪来的老妇人？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "请问长老，你可曾看见一个送饭的女子吗？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices:
+    - choiceText: "结束对话"
+      targetIndex: -1
+      broadcastEvent: 0
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  title: 
+  author: 

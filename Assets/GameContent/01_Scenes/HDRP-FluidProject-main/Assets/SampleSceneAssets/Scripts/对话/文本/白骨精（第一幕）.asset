@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "白骨精（第一幕）"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "白骨精"
+    content: "黑狐精。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "在，夫人。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "唐僧可曾到来？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "我已命小的们把守山林路口，唐僧来到即刻禀报夫人。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "我的血食呢？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "这…夫人，这一带生人死的死，逃的逃，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "连山上的野物也难以捉到了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "嗯？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "我这就去找，我这就去找。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "夫人，请看。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "嗯？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "女儿"
+    content: "娘，娘，爹，爹。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "母亲"
+    content: "女儿。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "女儿"
+    content: "娘，娘，爹，我怕。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "父亲、母亲"
+    content: "女儿。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "女儿"
+    content: "我怕，爹。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "母亲"
+    content: "夫人，你发发慈悲吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "父亲"
+    content: "孩子她娘。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "女儿"
+    content: "娘！"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "父亲"
+    content: "啊？女儿！"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "女儿"
+    content: "啊！"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "骷髅兵"
+    content: "夫人，夫人，大喜事，大喜事呀，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "骷髅兵"
+    content: "那西天取经的唐僧上山来了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "好，吃了唐僧肉，益寿又延年。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "夫人，那唐僧手下有三个徒弟，其中大闹天宫的…"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "不就是那孙悟空嘛。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "黑狐精"
+    content: "夫人，还是小心从事为好。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "你留守洞中，我去看看。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices:
+    - choiceText: "结束对话"
+      targetIndex: -1
+      broadcastEvent: 0
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  title: 
+  author: 

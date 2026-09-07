@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
+  m_Name: "白骨精（第二幕）"
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - speaker: "白骨精"
+    content: "【真是造化，孙悟空飞走了，今个儿可算是能吃到唐僧肉了】"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "【我且幻化成小姑娘耍他们一耍】"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "啊！"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "妖怪。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "妖怪，妖怪。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "女施主莫害怕，我这徒弟虽然相貌丑陋，却是好人。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老，小女子见礼了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "啊？馒头。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "二师兄。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "这位师父想是饿得紧了，那就请吃一个吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "师兄，来。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "师父。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "女施主，这荒山野岭只有我师徒几人和你一个妇道人家多有不便，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "请上路吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老说话有差，此山叫白虎岭，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "山前山后都有人家，怎么叫荒山野岭呢。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "师父，大师兄明讲这一代杳无人烟，可是这女子。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "女施主，你怎么独自一人在山间行走？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老，小女子家住在北山岭下，只因父母年老多病无人使唤，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "我这才独自行走，前去给我丈夫送饭。既是师父饿了，那就请吃一个吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "师父……"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "善哉，只是你这饭要是被我们吃了，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "你丈夫晓得了骂你，这不是贫僧的罪过了？"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老啊，我丈夫更是个善人，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "一生好的是修桥补路，爱老怜贫。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "他要是听见说这饭送与师父吃了，更是情愿呢。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "师父你看，这……"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "只是我那大徒弟已经去摘果子去了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老，你既不要小女子的食物，那就请到我家里去吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "我父母乐善好施，广斋僧人，若见师父去了，必定准备斋饭，款待长老。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老，你就随我同去吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "这"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "长老！你若不去，我父母知道了，"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "白骨精"
+    content: "那他们一定会责怪我对长老您不够诚信。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "那好，师父，咱们快走吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "师父，还是等等大师兄回来吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "猪八戒"
+    content: "去你的，大师兄半天不回来，师父都快饿昏了。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "沙和尚"
+    content: "唉，二师兄。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  - speaker: "唐僧"
+    content: "也好，那就去吧。"
+    portrait: {fileID: 0}
+    nextIndex: 0
+    choices:
+    - choiceText: "结束对话"
+      targetIndex: -1
+      broadcastEvent: 0
+    broadcastOnShow: 0
+    broadcastEventKey: 
+  title: 
+  author: 
