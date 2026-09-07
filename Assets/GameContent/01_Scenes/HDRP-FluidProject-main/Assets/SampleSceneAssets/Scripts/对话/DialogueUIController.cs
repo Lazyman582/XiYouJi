@@ -106,6 +106,7 @@ public class DialogueUIController : MonoBehaviour
                 int target = choice.targetIndex;
                 int current = controller.CurrentIndex;
                 string text = choice.choiceText;
+
                 DialogueData container = controller.GetCurrentDialogue();
                 btn.onClick.AddListener(() =>
                 {
@@ -200,8 +201,10 @@ public class DialogueUIController : MonoBehaviour
 
         Transform nameTrans = entry.transform.Find("NameText");
         Transform contentTrans = entry.transform.Find("ContentText");
-
+        
         if (nameTrans == null || contentTrans == null) return;
+
+        
 
         TMP_Text nameText = nameTrans.GetComponent<TMP_Text>();
         TMP_Text contentText = contentTrans.GetComponent<TMP_Text>();
@@ -214,6 +217,8 @@ public class DialogueUIController : MonoBehaviour
             nameText.gameObject.SetActive(showName);
 
         contentText.text = "" + content;
+
+
 
         Canvas.ForceUpdateCanvases();
         contentText.ForceMeshUpdate(true, true);
