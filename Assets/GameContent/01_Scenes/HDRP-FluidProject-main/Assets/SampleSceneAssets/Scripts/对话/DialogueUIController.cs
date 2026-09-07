@@ -219,7 +219,7 @@ public class DialogueUIController : MonoBehaviour
         Transform nameTrans = entry.transform.Find("NameText");
         Transform contentTrans = entry.transform.Find("ContentText");
         
-        if (nameTrans == null || contentTrans == null) return;
+        if (nameTrans == null || contentTrans == null) return null;
 
         
 
