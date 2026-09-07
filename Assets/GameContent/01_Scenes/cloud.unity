@@ -333,6 +333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_ClickMove
       objectReference: {fileID: 0}
+    - target: {fileID: 6350715556466381214, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 2d4546e9b67285046b0c10b68c8f7ec3, type: 3}
+    - target: {fileID: 6350715556466381214, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1101e93b37da8b24bb940e419fdaa304, type: 2}
     - target: {fileID: 6569323139339335915, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
       propertyPath: m_Speed
       value: 12
