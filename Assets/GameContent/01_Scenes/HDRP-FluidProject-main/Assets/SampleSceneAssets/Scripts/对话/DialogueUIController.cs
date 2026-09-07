@@ -31,6 +31,11 @@ public class DialogueUIController : MonoBehaviour
     // 存储当前显示的选项按钮（用于清除）
     private List<Button> currentChoiceButtons = new List<Button>();
 
+    // “讲完后广播”相关：等文本效果播完 → 广播 DialogueLineFinished → 锁定按钮，等监听方回调
+    private Coroutine finishBroadcastRoutine;
+    private bool interactionLockedByEvent = false;
+    private const float FINISH_WAIT_TIMEOUT = 20f;   // 循环类文本效果永远不“完成”，用超时兜底
+
     public static DialogueUIController Instance { get; private set; }
 
     public static event System.Action OnDialogueEnd;
@@ -71,17 +76,25 @@ public class DialogueUIController : MonoBehaviour
         var controller = DialogueController.Instance;
         if (controller == null) return;
 
+        interactionLockedByEvent = false;   // 重新显示对话时清除上一次的锁定状态
+
         DialogueData data = controller.GetCurrentDialogue();
         if (data == null)
         {
             EndDialogue();
             return;
         }
+
+        if (avatarImage != null)
+        {
+            avatarImage.sprite = data.portrait;
+            avatarImage.gameObject.SetActive(data.portrait != null);
+        }
         Debug.Log($"[对话调试] 当前索引: {controller.CurrentIndex} ");
         // 添加对话条目
         BroadcastIfNeeded(data);
 
-        AddDialogueEntry(data.speaker, data.content, data.portrait);
+        TextEffect entryEffect = AddDialogueEntry(data.speaker, data.content, data.portrait);
 
         // 新条目可能比视口高，滚到最新一条
         StartCoroutine(ScrollToBottom());
@@ -157,6 +170,9 @@ public class DialogueUIController : MonoBehaviour
             nextButton.interactable = false;
             // 如果你想自动结束，可以调用 EndDialogue();
         }
+
+        // 这句配置了 broadcastOnFinish：讲完后广播事件并锁定按钮，等待监听方回调
+        QueueFinishBroadcast(data, entryEffect);
     }
     private void PrewarmTextEffect()
     {
@@ -194,7 +210,8 @@ public class DialogueUIController : MonoBehaviour
 
         Debug.Log($"[对话系统] 广播场景事件：{data.broadcastEventKey}");
     }
-    private void AddDialogueEntry(string speaker, string content, Sprite portrait)
+    // 返回该条目的 TextEffect（没有则返回 null），供“讲完后广播”等待效果播完
+    private TextEffect AddDialogueEntry(string speaker, string content, Sprite portrait)
     {
         GameObject entry = Instantiate(entryTemplate, contentParent);
         historyEntries.Add(entry);
@@ -229,6 +246,7 @@ public class DialogueUIController : MonoBehaviour
         if (sizer != null) sizer.Refresh();
 
         StartCoroutine(StartEffectNextFrame(effect));
+        return effect;
     }
 
     private IEnumerator StartEffectNextFrame(TextEffect effect)
@@ -261,6 +279,14 @@ public class DialogueUIController : MonoBehaviour
     // 结束对话（清空历史、选项，重置索引，关闭面板）
     public void EndDialogue()
     {
+        // 取消尚未触发的“讲完后广播”，并解除锁定
+        if (finishBroadcastRoutine != null)
+        {
+            StopCoroutine(finishBroadcastRoutine);
+            finishBroadcastRoutine = null;
+        }
+        interactionLockedByEvent = false;
+
         ClearHistory();
         ClearChoiceButtons();
 
@@ -295,8 +321,120 @@ public class DialogueUIController : MonoBehaviour
         if (nextButton != null)
             nextButton.interactable = true;
     }
+
+    // ---------- 讲完后广播并暂停 ----------
+
+    // 这句配置了 broadcastOnFinish 时调用：等文本效果播完 → 广播 DialogueLineFinished → 锁定按钮
+    private void QueueFinishBroadcast(DialogueData data, TextEffect effect)
+    {
+        if (finishBroadcastRoutine != null)
+        {
+            StopCoroutine(finishBroadcastRoutine);
+            finishBroadcastRoutine = null;
+        }
+        if (data == null || !data.broadcastOnFinish || string.IsNullOrEmpty(data.finishEventKey))
+            return;
+
+        finishBroadcastRoutine = StartCoroutine(BroadcastAfterLineFinished(data, effect));
+    }
+
+    private IEnumerator BroadcastAfterLineFinished(DialogueData data, TextEffect effect)
+    {
+        var controller = DialogueController.Instance;
+        int lineIndex = controller != null ? controller.CurrentIndex : -1;
+
+        // 等 AddDialogueEntry 里下一帧的 StartManualEffects 生效
+        yield return null;
+        yield return null;
+
+        // 等所有已开始的手动效果播完（打字机等）；循环类效果不会自己结束，靠超时兜底
+        float waited = 0f;
+        while (waited < FINISH_WAIT_TIMEOUT && effect != null && HasRunningManualEffect(effect))
+        {
+            yield return null;
+            waited += Time.unscaledDeltaTime;
+        }
+        if (waited >= FINISH_WAIT_TIMEOUT)
+            Debug.LogWarning($"[对话系统] 等待文本效果完成超时({FINISH_WAIT_TIMEOUT}s)，强制广播：{data.finishEventKey}");
+
+        // 等待期间已翻页或结束对话：放弃本次广播
+        if (DialogueController.Instance == null
+            || DialogueController.Instance.CurrentIndex != lineIndex
+            || dialoguePanelRoot == null || !dialoguePanelRoot.activeSelf)
+        {
+            finishBroadcastRoutine = null;
+            yield break;
+        }
+
+        Debug.Log($"[对话系统] 第 {lineIndex} 句讲完，广播事件：{data.finishEventKey}，锁定按钮等待回调");
+        EventBus<DialogueLineFinished>.Publish(new DialogueLineFinished
+        {
+            EventKey = data.finishEventKey,
+            LineIndex = lineIndex,
+            Speaker = data.speaker,
+            Content = data.content,
+            Container = data
+        });
+
+        LockInteraction();
+        finishBroadcastRoutine = null;
+    }
+
+    private static bool HasRunningManualEffect(TextEffect effect)
+    {
+        foreach (var status in effect.QueryEffectStatuses(TextEffectType.Global, TextEffectEntry.TriggerWhen.Manual))
+            if (status.Started && !status.IsComplete) return true;
+        foreach (var status in effect.QueryEffectStatuses(TextEffectType.Tag, TextEffectEntry.TriggerWhen.Manual))
+            if (status.Started && !status.IsComplete) return true;
+        return false;
+    }
+
+    // 锁定对话交互：继续按钮 + 选项按钮都不可点，Controller 层也同步阻塞
+    public void LockInteraction()
+    {
+        interactionLockedByEvent = true;
+        if (nextButton != null)
+            nextButton.interactable = false;
+        foreach (var btn in currentChoiceButtons)
+            if (btn != null) btn.interactable = false;
+        if (DialogueController.Instance != null)
+            DialogueController.Instance.BlockProceed();
+    }
+
+    // 监听方任务完成后的回调入口：收到回调后解锁，对话继续
+    // autoContinue=true 时，无选项的句子自动推进到下一句（有选项的句子仍等待玩家选择）
+    public void ResumeDialogue(bool autoContinue = false)
+    {
+        interactionLockedByEvent = false;
+        if (DialogueController.Instance != null)
+            DialogueController.Instance.UnblockProceed(false);
+        RestoreButtons();
+        Debug.Log("[对话系统] 收到任务完成回调，对话恢复");
+
+        if (autoContinue && DialogueController.Instance != null && !DialogueController.Instance.HasChoices)
+            OnNextButtonClicked();
+    }
+
+    // 按当前对话状态恢复按钮的可交互性
+    private void RestoreButtons()
+    {
+        var controller = DialogueController.Instance;
+        if (controller == null) return;
+
+        if (controller.HasChoices)
+        {
+            foreach (var btn in currentChoiceButtons)
+                if (btn != null) btn.interactable = true;
+        }
+        else if (nextButton != null && nextButton.gameObject.activeSelf)
+        {
+            nextButton.interactable = !controller.IsEnd();
+        }
+    }
+
     public void OnNextButtonClicked()
     {
+        if (interactionLockedByEvent) return;   // 讲完后广播暂停期间禁止推进
         if (Time.unscaledTime - lastNextClickTime < NEXT_CLICK_COOLDOWN)
             return;
         lastNextClickTime = Time.unscaledTime;

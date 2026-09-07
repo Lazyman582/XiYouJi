@@ -15,6 +15,10 @@ public class DialogueData
     [Header("对话触发事件 (广播)")]
     public bool broadcastOnShow = false;      // 显示这句话时是否广播
     public string broadcastEventKey = "";     // 要广播的事件名称（例如 "WaterAppear"）
+
+    [Header("讲完后广播事件并暂停对话")]
+    public bool broadcastOnFinish = false;    // 这句话“讲完”(文本效果播完)后广播事件并锁定对话按钮
+    public string finishEventKey = "";        // 广播的事件 Key，监听方据此订阅 (DialogueLineFinished)
 }
 [System.Serializable]
 public class DialogueChoice
