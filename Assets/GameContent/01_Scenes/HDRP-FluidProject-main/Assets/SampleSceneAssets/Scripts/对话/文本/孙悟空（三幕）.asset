@@ -161,10 +161,13 @@ MonoBehaviour:
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u8001\u5987\u4EBA"
-    content: "\u518D\u4E0D\u6562\u4E86\uFF0C\u518D\u4E0D\u6562\u4E86\u3002"
+    content: "\u518D\u4E0D\u6562\u4E86\uFF0C\u518D\u4E0D\u6562\u4E86"
     portrait: {fileID: 0}
     nextIndex: 0
-    choices: []
+    choices:
+    - choiceText: "\u7EE7\u7EED\u4E0A\u8DEF"
+      targetIndex: -1
+      broadcastEvent: 1
     broadcastOnShow: 0
     broadcastEventKey: 
   title: 

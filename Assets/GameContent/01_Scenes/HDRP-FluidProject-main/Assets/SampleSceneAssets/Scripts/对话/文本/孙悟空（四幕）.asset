@@ -340,7 +340,7 @@ MonoBehaviour:
     portrait: {fileID: 0}
     nextIndex: 0
     choices:
-    - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
+    - choiceText: "\u79BB\u5F00\u5510\u50E7"
       targetIndex: -1
       broadcastEvent: 0
     broadcastOnShow: 0
