@@ -7,6 +7,7 @@ public class CoverController : MonoBehaviour
     public GameObject titleText;
     public GameObject subtitleText;
     public GameObject enterButton;
+    public GameObject[] menuButtons;
 
     private void Start()
     {
@@ -53,6 +54,23 @@ public class CoverController : MonoBehaviour
             btnCg.DOFade(1f, 0.5f).SetDelay(0.8f);
             enterButton.transform.localScale = Vector3.zero;
             enterButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.8f);
+        }
+
+        // 设置 / 制作名单 / 退出 三个按钮：依次弹出，跟随进入体验按钮之后
+        if (menuButtons != null)
+        {
+            for (int i = 0; i < menuButtons.Length; i++)
+            {
+                GameObject menuBtn = menuButtons[i];
+                if (menuBtn == null) continue;
+                CanvasGroup menuCg = menuBtn.GetComponent<CanvasGroup>();
+                if (menuCg == null) menuCg = menuBtn.AddComponent<CanvasGroup>();
+                float delay = 0.95f + 0.12f * i;
+                menuCg.alpha = 0;
+                menuCg.DOFade(1f, 0.5f).SetDelay(delay);
+                menuBtn.transform.localScale = Vector3.zero;
+                menuBtn.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(delay);
+            }
         }
     }
 }

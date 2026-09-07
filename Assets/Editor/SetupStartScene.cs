@@ -263,8 +263,6 @@ public static class SetupStartScene
         BookReaderController bookCtrl = readContent.AddComponent<BookReaderController>();
         bookCtrl.bookArea = bookArea.GetComponent<RectTransform>();
         bookCtrl.pageIndicator = pageIndObj.GetComponent<Text>();
-        bookCtrl.bookProPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(
-            "Assets/Book-Page Curl Pro/Prefabs/BookPro.prefab");
         prevBtn.GetComponent<Button>().onClick.AddListener(() => bookCtrl.PreviousPage());
         nextBtn.GetComponent<Button>().onClick.AddListener(() => bookCtrl.NextPage());
 
@@ -457,8 +455,6 @@ public static class SetupStartScene
             return;
         }
 
-        bookController.bookProPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(
-            "Assets/Book-Page Curl Pro/Prefabs/BookPro.prefab");
         bookController.bookArea = bookArea.GetComponent<RectTransform>();
         bookController.pageIndicator = pageIndicator.GetComponent<Text>();
         EditorUtility.SetDirty(bookController);
