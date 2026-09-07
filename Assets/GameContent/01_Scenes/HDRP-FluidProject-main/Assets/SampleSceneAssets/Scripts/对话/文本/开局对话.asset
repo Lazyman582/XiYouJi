@@ -20,6 +20,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 1
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u6211,\u6211\u4E0D\u8D70\u4E86,\u771F\u662F."
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -27,6 +29,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u6C99\u50E7"
     content: "\u4E8C\u5E08\u5144\u4E0B\u4E86\u5C71\u53BB,\u624D\u80FD\u6295\u5BBF\u5316\u658B,\u8D70\u5427"
     portrait: {fileID: -1327279500, guid: bae327104e09ea74ea0ece64f6713e4d, type: 3}
@@ -34,6 +38,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 1
     broadcastEventKey: hideEventKey
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u4F60\u8BF4\u5F97\u5012\u597D\u542C,\u54FC\u3002"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -41,6 +47,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u5C71\u8FDE\u5C71\u8DEF\u5F2F\u5F2F\uFF0C\u4EC0\u4E48\u65F6\u5019\u8D70\u51FA\u5C71\u5450\u8FD9\u3002\u5E08\u7236\uFF0C\u4F60\u770B\uFF0C\u6211\u8001\u732A\u90FD\u997F\u660F\u4E86"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -48,6 +56,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: 
     content: "\u5E08\u5085\u4E5F\u7D2F\u7684\u5750\u77F3\u5934\u4E0A,\u767D\u9F99\u9A6C\uFF0C\u6C99\u50E7\u7AD9\u5728\u80CC\u540E"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -55,6 +65,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u4E5F\u89C9\u5F97\u997F\u4E86,\u609F\u7A7A"
     portrait: {fileID: -1790309768, guid: d78be8f90eb921e4e892d778833d30d7, type: 3}
@@ -62,6 +74,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u53BB\u5316\u4E9B\u658B\u6765\u5427."
     portrait: {fileID: -1790309768, guid: d78be8f90eb921e4e892d778833d30d7, type: 3}
@@ -69,6 +83,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u5E08\u7236,\u8FD9\u8352\u5C71\u91CE\u5CAD\u4E00\u65E0\u6751\u5E84\u4E8C\u65E0\u4EBA\u5BB6,\u53EB\u5F92\u5F1F\u4E0A\u54EA\u513F\u5316\u658B\u53BB"
     portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
@@ -76,6 +92,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u5E08\u5144,\u4F60\u4E00\u4E2A\u8DDF\u6597\u5C31\u5341\u4E07\u516B\u5343\u91CC,\u5F04\u70B9\u658B\u996D\u6765\u8FD8\u4E0D\u5BB9\u6613\u5417"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -83,6 +101,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u5446\u5B50,\u4F60\u61C2\u4EC0\u4E48"
     portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
@@ -90,6 +110,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u8FD9\u91CC\u5C71\u52BF\u9669\u5CFB,\u53EA\u6015\u85CF\u6709\u5996\u7CBE,\u8981\u662F\u6211\u8D70\u8FDC\u4E86,\u6709\u5996\u7CBE\u6765\u5BB3\u5E08\u7236\u600E\u4E48\u529E"
     portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
@@ -97,6 +119,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u8FD9\u5149\u5929\u5316\u65E5\u7684\u54EA\u6709\u5996\u7CBE\u554A,\u5E08\u7236,\u5E08\u5144\u662F\u9A97\u4F60\u7684"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -104,6 +128,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
     content: "\u6211\u521A\u624D\u6211\u660E\u660E\u5728\u5730\u91CC\u5934\u770B\u89C1\u6709\u7281\u6756\u74E6\u7F50\u7684,\u90A3\u4E0D\u662F\u4EBA\u5BB6\u7684\u4E1C\u897F\u5417"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -111,6 +137,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u5446\u5B50\u3002"
     portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
@@ -118,6 +146,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u609F\u7A7A\u3002"
     portrait: {fileID: -1790309768, guid: d78be8f90eb921e4e892d778833d30d7, type: 3}
@@ -125,6 +155,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u5E08\u7236\u3002"
     portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
@@ -132,6 +164,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u90A3\u4F60\u4E3A\u4EC0\u4E48\u4E0D\u53BB\u5316\u658B\u5440"
     portrait: {fileID: -1790309768, guid: d78be8f90eb921e4e892d778833d30d7, type: 3}
@@ -139,6 +173,8 @@ MonoBehaviour:
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u5E08\u7236,\u5F85\u6211\u6253\u63A2\u4E00\u4E0B"
     portrait: {fileID: -1790309768, guid: b37440638ae88c541ba0724a92c33a90, type: 3}
@@ -149,5 +185,7 @@ MonoBehaviour:
       broadcastEvent: 1
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   title: 
   author: 

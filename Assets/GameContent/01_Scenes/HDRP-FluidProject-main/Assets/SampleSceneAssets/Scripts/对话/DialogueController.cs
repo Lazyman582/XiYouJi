@@ -23,12 +23,12 @@ public class DialogueController : MonoBehaviour
         Debug.Log("[DialogueController] 对话流程被阻塞");
     }
 
-    public void UnblockProceed()
+    public void UnblockProceed(bool showCurrentLine = true)
     {
         isBlocked = false;
         Debug.Log("[DialogueController] 对话流程已恢复");
         // 恢复后自动继续显示下一条
-        if (DialogueUIController.Instance != null)
+        if (showCurrentLine && DialogueUIController.Instance != null)
         {
             DialogueUIController.Instance.ShowCurrentDialogue();
         }
