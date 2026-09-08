@@ -17,7 +17,10 @@ MonoBehaviour:
     content: "\u809A\u5B50\u997F\u5F97\u5495\u5495\u53EB,\u6211\u5B9E\u5728\u662F\u8D70\u4E0D\u52A8\u4E86"
     portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
-    choices: []
+    choices:
+    - choiceText: 
+      targetIndex: 17
+      broadcastEvent: 0
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 1
