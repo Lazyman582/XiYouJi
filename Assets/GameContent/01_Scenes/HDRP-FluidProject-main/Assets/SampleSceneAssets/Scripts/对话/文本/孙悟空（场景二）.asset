@@ -15,7 +15,7 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "\u732A\u516B\u6212"
     content: "\u8FD9\u5973\u5B50\u6CA1\u6C14\u4E86\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u609F\u7A7A\uFF01\u4F60\u4E3A\u4F55\u65E0\u6545\u4F24\u4EBA\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8FD9 \u8FD9\u5206\u660E\u662F\u826F\u5BB6\u5973\u5B50\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u6211\u82E5\u6765\u8FDF\uFF0C\u4F60\u5B9A\u5165\u4ED6\u5957\u5B50\uFF0C\u906D\u4ED6\u6BD2\u624B\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u5144\u706B\u773C\u91D1\u775B\uFF0C\u4E0D\u4F1A\u6709\u9519\u7684\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u7BA1\u4ED6\u5996\u4E0D\u5996\u7CBE\uFF0C\u8FD9\u7BEE\u5B50\u996D\u98DF\uFF0C\u6B63\u597D\u54B1\u4EEC\u53D7\u7528\u4E86\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4E8C\u5E08\u5144\uFF0C\u4F60\u600E\u4E48\u5543\u8D77\u6765\u77F3\u5934\u4E86"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\u4F60\u770B\u8FD9\u7F50\u5B50\u91CC\u662F\u751A\u4E1C\u897F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u8BF4\u8D77\u8FD9\u4E2A\u5973\u5B50\uFF0C\u5979\u662F\u6B64\u95F4\u519C\u5987"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u56E0\u4E3A\u9001\u996D\u4E0B\u7530\uFF0C\u8DEF\u9047\u6211\u7B49\uFF0C\u5374\u600E\u4E48\u683D\u4ED6\u662F\u4E2A\u5996\u602A\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u54E5\u54E5\u7684\u68CD\u91CD\uFF0C\u8D70\u5C06\u6765\u8BD5\u624B\u6253\u4ED6\u4E00\u4E0B\uFF0C\u4E0D\u60F3\u5C31\u6253\u6B7B\u4E86\uFF1B"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6015\u4F60\u5FF5\u4EC0\u4E48\u7D27\u7B8D\u513F\u5492\uFF0C\u6545\u610F\u4F7F\u4E2A\u969C\u773C\u6CD5\uFF0C\u53D8\u505A\u8FD9\u7B49\u6837\u4E1C\u897F\uFF0C\u8BA9\u4F60\u4E0D\u5FF5\u5492\u54E9"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5934\u75BC\uFF01\u5934\u75BC\uFF01\u83AB\u5FF5\uFF01\u83AB\u5FF5\uFF01\u6709\u8BDD\u4FBF\u8BF4\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6709\u4EC0\u4E48\u8BDD\u8BF4\uFF01\u51FA\u5BB6\u4EBA\u65F6\u65F6\u5E38\u8981\u65B9\u4FBF\uFF0C\u5FF5\u5FF5\u4E0D\u79BB\u5584\u5FC3"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u626B\u5730\u6050\u4F24\u877C\u8681\u547D\uFF0C\u7231\u60DC\u98DE\u86FE\u7EB1\u7F69\u706F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u600E\u4E48\u6B65\u6B65\u884C\u51F6\uFF0C\u6253\u6B7B\u8FD9\u4E2A\u65E0\u6545\u6740\u4EBA\uFF0C\u53D6\u6765\u771F\u7ECF\u53C8\u6709\u4F55\u7528\uFF1F\u4F60\u56DE\u53BB\u7F62\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u4F60\u53EB\u6211\u56DE\u90A3\u91CC\u53BB\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u4E0D\u8981\u4F60\u505A\u5F92\u5F1F\u4E86"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u4E0D\u8981\u6211\u505A\u5F92\u5F1F\uFF0C\u53EA\u6015\u4F60\u897F\u5929\u8DEF\u53BB\u4E0D\u6210\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u547D\u5728\u5929\uFF0C\u8BE5\u90A3\u4E2A\u5996\u7CBE\u84B8\u4E86\u5403\uFF0C\u5C31\u662F\u716E\u4E86\uFF0C\u4E5F\u7B97\u4E0D\u5230\u4F60\u6295\u4E0A\u53BB\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u6211\u56DE\u53BB\u4FBF\u4E5F\u7F62\u4E86\uFF0C\u53EA\u662F\u4E0D\u66FE\u62A5\u5F97\u4F60\u7684\u6069\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u4E0E\u4F60\u6709\u4EC0\u4E48\u6069\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4FFA\u8001\u5B59\u56E0\u5927\u95F9\u5929\u5BAB\uFF0C\u72AF\u4E0B\u4E86\u5929\u6761\uFF0C\u88AB\u4F5B\u7956\u538B\u5728\u4E24\u754C\u5C71\uFF0C\u5E78\u5F97\u89C2\u97F3\u83E9\u8428\u8BA9\u6211\u53D7\u4E86\u6212\u884C\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u53C8\u5E78\u5F97\u5E08\u7236\u6551\u8131\uFF0C\u82E5\u4E0D\u4E0E\u4F60\u540C\u4E0A\u897F\u5929\uFF0C\u663E\u5F97\u6211\u77E5\u6069\u4E0D\u62A5\u975E\u541B\u5B50\uFF0C\u4E07\u53E4\u5343\u79CB\u4F5C\u9A82\u540D"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u65E2\u5982\u6B64\u8BF4\u4E86\uFF0C\u5C31\u4E14\u9976\u4F60\u8FD9\u4E00\u6B21"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F11\u5F97\u518D\u6B21\u65E0\u793C\u3002\u5982\u82E5\u4ECD\u524D\u4F5C\u6076\uFF0C\u8FD9\u5492\u8BED\u98A0\u5012\u5C31\u5FF5\u4E8C\u5341\u904D\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -249,7 +249,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u5403\u6843\uFF0C\u5403\u6843"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"

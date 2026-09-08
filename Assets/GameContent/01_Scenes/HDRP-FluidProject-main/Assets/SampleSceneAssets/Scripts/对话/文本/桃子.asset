@@ -20,7 +20,7 @@ MonoBehaviour:
     choices: []
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u4F60\u600E\u4E48\u4F1A\u5728\u8FD9"
-    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
   - speaker: "\u6843\u5B50"
@@ -30,7 +30,7 @@ MonoBehaviour:
     choices: []
   - speaker: "\u5B59\u609F\u7A7A"
     content: "ly\u795E\u4E86"
-    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
   - speaker: "\u5965\u7279\u66FC"

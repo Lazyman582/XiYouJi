@@ -15,329 +15,329 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "\u5510\u50E7"
     content: "\u963F\u5F25\u9640\u4F5B\uFF01\u897F\u65B9\u771F\u662F\u798F\u5730\uFF01\u90A3\u516C\u516C\u8DEF\u90FD\u8D70\u4E0D\u52A8\u4E86\uFF0C\u8FD8\u5728\u5FF5\u7ECF\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u4F60\u5148\u4E0D\u8981\u5938\u5956\uFF0C\u4EBA\u5BB6\u8981\u548C\u6211\u4EEC\u5BF9\u4ED7\u5462\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u516B\u6212\uFF0C\u4F60\u5728\u8BB2\u4EC0\u4E48\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\u4F60\u60F3\u554A\uFF0C\u5927\u5E08\u5144\u6740\u4ED6\u7684\u5973\u513F\uFF0C\u53C8\u6740\u4ED6\u7684\u8001\u5A46\u5B50\uFF0C\u4EBA\u5BB6\u6B63\u8981\u62A5\u5B98\u5462\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u8FD9\u4E2A\u5446\u5B50\uFF0C\u4F11\u8981\u80E1\u8BF4\u3002\u5E08\u7236\uFF0C\u7B49\u8001\u5B59\u518D\u53BB\u770B\u770B\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8001\u5934\uFF0C\u4F60\u600E\u4E48\u5728\u8FD9\u91CC\u5FF5\u7ECF\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u957F\u8001\u554A\uFF0C\u6211\u5728\u6B64\u7B49\u5019\u6211\u7684\u59BB\u8001\u59BB\u5C0F\u5973\u5462"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u4E0D\u7528\u8896\u5B50\u91CC\u88C5\u9B3C\u6765\u54C4\u6211\uFF0C\u6211\u8BA4\u5F97\u4F60"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u957F\u8001\u6253\u5C71\u4E0A\u6765\u53EF\u89C1\u6211\u59BB\u5C0F\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8FD9......"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5C0F\u5973\u524D\u53BB\u5730\u91CC\u9001\u996D\uFF0C\u8001\u5988\u5988\u53C8\u53BB\u5BFB\u5979\uFF0C\u5929\u90FD\u5230\u8FD9\u4E2A\u65F6\u5019\u4E86\uFF0C\u8FD8\u4E0D\u89C1\u56DE\u6765......"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u8FD9\u5996\u7CBE\uFF0C\u4E24\u6B21\u53D8\u5316\u90FD\u88AB\u6211\u8BC6\u7834\uFF0C\u5982\u4ECA\u7ADF\u7136\u53C8\u6765\u9A97\u4EBA\uFF0C\u770B\u6253\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u609F\u7A7A"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\uFF08\u8981\u4E0D\u6253\u4ED6\uFF0C\u5E08\u7236\u6050\u6015\u6709\u6027\u547D\u4E4B\u5FE7\uFF1B\u82E5\u8981\u6253\u4ED6\uFF0C\u53C8\u6015\u5E08\u7236\u5FF5\u90A3\u5492\u8BED\u3002\uFF09"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\uFF08\u770B\u6211\u5148\u54C4\u4ED6\u4E00\u54C4\uFF0C\u4E5F\u5C31\u7F62\u4E86\u3002\uFF09"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8FD9\u5996\u7CBE\u4E09\u756A\u6765\u620F\u5F04\u6211\u5E08\u7236\uFF0C\u8FD9\u4E00\u756A\u662F\u8981\u6253\u6740\u4ED6\u3002\u4F60\u6B64\u7ED9\u6211\u4F5C\u8BC1\uFF0C\u4E0D\u8BB8\u8D70\u4E86\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5927\u5E08\u5144\u53D1\u75C5\u4E86\uFF0C\u53EA\u8D70\u4E86\u534A\u65E5\u8DEF\uFF0C\u5012\u6253\u6B7B\u4E09\u4E2A\u4EBA\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u83AB\u5FF5\uFF01\u83AB\u5FF5\uFF01\u4F60\u5148\u6765\u770B\u770B\u4ED6\u7684\u6A21\u6837\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u609F\u7A7A\uFF0C\u8FD9\u4E2A\u4EBA\u624D\u6B7B\u4E86\uFF0C\u600E\u4E48\u5C31\u5316\u4F5C\u4E00\u5806\u9AB7\u9AC5\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4ED6\u662F\u4E2A\u6F5C\u7075\u4F5C\u602A\u7684\u50F5\u5C38\uFF0C\u5728\u6B64\u8FF7\u4EBA\u4F5C\u6076\uFF0C\u88AB\u6211\u6253\u6740\uFF0C\u4ED6\u5C31\u73B0\u4E86\u771F\u8EAB\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u5927\u5E08\u5144\u628A\u4EBA\u6253\u6B7B\uFF0C\u53EA\u6015\u4F60\u5FF5\u7D27\u7B8D\u5492\uFF0C\u6545\u610F\u53D8\u5316\u8FD9\u4E2A\u6A21\u6837\uFF0C\u9A97\u4F60\u5462\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u7334\u5934\uFF01\u8FD8\u6709\u751A\u8BF4\u8BDD\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u83AB\u5FF5\uFF01\u83AB\u5FF5\uFF01\u6709\u8BDD\u5C31\u8BF4\u5427\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u51FA\u5BB6\u4EBA\u884C\u5584\uFF0C\u5982\u6625\u56ED\u4E4B\u8349\uFF0C\u4E0D\u89C1\u5176\u957F\uFF0C\u65E5\u6709\u6240\u589E\uFF1B"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u884C\u6076\u4E4B\u4EBA\uFF0C\u5982\u78E8\u5200\u4E4B\u77F3\uFF0C\u4E0D\u89C1\u5176\u635F\uFF0C\u65E5\u6709\u6240\u4E8F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u5728\u8FD9\u8352\u90CA\u91CE\u5916\uFF0C\u4E00\u8FDE\u6253\u6B7B\u4E09\u4EBA\uFF0C\u8FD8\u662F\u65E0\u4EBA\u68C0\u4E3E\u63ED\u53D1\uFF1B"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5018\u82E5\u5230\u57CE\u5E02\u4E4B\u4E2D\uFF0C\u4F60\u62FF\u4E86\u90A3\u54ED\u4E27\u68D2\uFF0C\u4E00\u65F6\u4E0D\u77E5\u597D\u6B79\uFF0C\u4E71\u6253\u8D77\u4EBA\u6765\uFF0C\u649E\u51FA\u5927\u7978\uFF0C\u6559\u6211\u600E\u4E48\u8131\u8EAB\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4F60\u8D70\u5427\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\u9519\u602A\u6211\u4E86\u3002\u8FD9\u53AE\u5206\u660E\u662F\u4E2A\u5996\u602A\uFF0C\u4ED6\u771F\u6709\u5FC3\u5BB3\u4F60\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u5012\u6253\u6B7B\u4ED6\uFF0C\u66FF\u4F60\u9664\u4E86\u5BB3\uFF0C\u4F60\u5374\u4E0D\u8BA4\u5F97\uFF0C\u53CD\u4FE1\u4E86\u90A3\u5446\u5B50\u8C17\u8A00\u51B7\u8BED\uFF0C\u5C61\u6B21\u9010\u6211\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E38\u8A00\u9053\uFF0C\u4E8B\u4E0D\u8FC7\u4E09\u3002\u6211\u82E5\u4E0D\u8D70\uFF0C\u771F\u662F\u4E2A\u4E0B\u6D41\u65E0\u803B\u4E4B\u5F92\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u8D70\u6211\u8D70\uFF01\u8D70\u5C31\u8D70\uFF0C\u53EA\u662F\u6015\u4F60\u624B\u4E0B\u65E0\u4EBA\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8FD9\u6CFC\u7334\u8D8A\u53D1\u65E0\u793C\uFF01\u770B\u8D77\u6765\uFF0C\u53EA\u4F60\u662F\u4EBA\uFF0C\u90A3\u609F\u80FD\u3001\u609F\u51C0\u5C31\u4E0D\u662F\u4EBA\uFF1F"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u82E6\u554A\uFF01\u82E6\u554A\uFF01\u6211\u62DC\u4F60\u4E3A\u5E08\u540E\uFF0C\u6211\u7A7F\u53E4\u6D1E\uFF0C\u5165\u6DF1\u6797\uFF0C\u64D2\u9B54\u6349\u602A\uFF0C\u6536\u516B\u6212\uFF0C\u5F97\u6C99\u50E7\uFF0C\u5403\u5C3D\u5343\u8F9B\u4E07\u82E6\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u4ECA\u65E5\u600E\u4E48\u5C31\u8FD9\u822C\u7CCA\u6D82\uFF0C\u53EA\u53EB\u6211\u56DE\u53BB"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u7F62\u7F62\u7F62\uFF01\u4F46\u53EA\u662F\u591A\u4E86\u90A3\u300A\u7D27\u7B8D\u513F\u5492\u300B"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u518D\u4E0D\u5FF5\u4E86\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8FD9\u4E2A\u96BE\u8BF4\u3002\u8981\u662F\u5230\u4E86\u90A3\u96BE\u5904\u8131\u4E0D\u4E86\u8EAB\uFF0C\u516B\u6212\u6C99\u50E7\u6551\u4E0D\u4E86\u4F60\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u90A3\u65F6\u5019\uFF0C\u60F3\u8D77\u6211\u6765\uFF0C\u5FCD\u4E0D\u4F4F\u53C8\u5FF5\u8D77\u6765\uFF0C\u5C31\u662F\u5341\u4E07\u91CC\u8DEF\uFF0C\u6211\u7684\u5934\u4E5F\u662F\u75BC\u7684\uFF1B"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5047\u5982\u518D\u6765\u89C1\u4F60\uFF0C\u4E0D\u662F\u663E\u5F97\u865A\u60C5\u5047\u610F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u7334\u5934\uFF01\u4EE5\u6B64\u4E3A\u7167\uFF0C\u518D\u4E0D\u8981\u4F60\u505A\u5F92\u5F1F\u4E86\uFF01\u5982\u518D\u4E0E\u4F60\u76F8\u89C1\uFF0C\u6211\u5C31\u5815\u4E86\u963F\u9F3B\u5730\u72F1\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u4E0D\u5FC5\u53D1\u8A93\uFF0C\u8001\u5B59\u4FFA\u8D70\u4E86\u4FBF\u662F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5E08\u7236\uFF0C\u4F60\u6211\u5E08\u5F92\u4E00\u573A\uFF0C\u4F60\u8BF7\u5750\uFF0C\u53D7\u6211\u4E00\u62DC\uFF0C\u6211\u4E5F\u53BB\u5F97\u653E\u5FC3\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u8D24\u5F1F\uFF0C\u4F60\u662F\u4E2A\u597D\u4EBA\uFF0C\u8981\u7559\u5FC3\u9632\u7740\u516B\u6212\u8A00\u8BED\uFF0C\u9014\u4E2D\u66F4\u8981\u4ED4\u7EC6\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u5018\u82E5\u6709\u5996\u7CBE\u62FF\u4F4F\u5E08\u7236\uFF0C\u4F60\u5C31\u8BF4\u4FFA\u8001\u5B59\u662F\u4ED6\u5927\u5F92\u5F1F\u3002"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u6211\u662F\u4E2A\u597D\u548C\u5C1A\uFF0C\u4E0D\u63D0\u8D77\u4F60\u8FD9\u6B79\u4EBA\u7684\u540D\u5B57\uFF0C\u4F60\u56DE\u53BB\u5427\uFF01"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "\u5510\u50E7"
     content: "\u597D..."
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "\u79BB\u5F00\u5510\u50E7"
