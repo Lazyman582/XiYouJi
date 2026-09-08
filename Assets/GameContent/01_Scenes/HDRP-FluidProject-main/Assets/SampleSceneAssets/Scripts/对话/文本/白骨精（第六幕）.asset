@@ -15,119 +15,119 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "唐僧"
     content: "阿弥陀佛！西方真是福地！那公公路都走不动了，还在念经。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父，你先不要夸奖，人家要和我们打官司呢！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "八戒，你在讲什么？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父你想啊，大师兄杀他的女儿，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "又杀他的老婆子，人家正要报官呢。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "你这个呆子，休要胡说。师父，等老孙再去看看。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "老头，你怎么在这里念经？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "长老啊，我在此等候我的妻老妻小女呢"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "你不用袖子里装鬼来哄我，我认得你"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "长老打山上来可见我妻小？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "这……"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "小女前去地里送饭，老妈妈又去寻她，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "天都到这个时候了，还不见回来……"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "你这妖精，两次变化都被我识破，如今竟然又来骗人，看打！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "悟空"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "这妖精三番来戏弄我师父，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "这一番是要打杀他。你此给我作证，不许走了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "结束对话"

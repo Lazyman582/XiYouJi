@@ -15,28 +15,28 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "白骨精"
     content: "女儿，你在哪儿啊？女儿……"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父！不好了！那妈妈儿来寻闺女了！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "沙和尚"
     content: "二师兄不要乱说，这荒山野岭的，哪来的老妇人？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "请问长老，你可曾看见一个送饭的女子吗？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "结束对话"

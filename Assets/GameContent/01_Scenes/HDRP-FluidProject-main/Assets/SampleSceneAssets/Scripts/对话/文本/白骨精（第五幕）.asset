@@ -15,35 +15,35 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "白骨精"
     content: "好猴王，着然有眼！我那般变了去，他也还认得我。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "这些和尚，他去得快，若过此山，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "西下四十里，就不归我所管了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "若是被别处妖魔捞去了，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "只怕笑破他人之口，我还下去戏他一戏。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "结束对话"

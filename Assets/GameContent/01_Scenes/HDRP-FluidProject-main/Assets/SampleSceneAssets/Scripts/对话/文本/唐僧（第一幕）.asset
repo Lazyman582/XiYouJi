@@ -15,231 +15,231 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "猪八戒"
     content: "肚子饿得咕咕叫，我实在是走不动了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "呆子，人参果都吃了，还饿。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "那哪管用啊，我，我不走了。真是。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "沙和尚"
     content: "二师兄下了山去，才能投宿化斋，走吧。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "你说得倒好听，哼。有了，太好了，唉，空的。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "山连山，路弯弯，什么时候走出山呐这。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父，你看，我老猪都快饿昏了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "我也觉得饥饿了，悟空。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "你去化些斋来吧。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父，这荒山野岭一无村庄二无人家，叫徒弟上哪儿化斋去？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师兄，你一个跟斗就十万八千里，弄点斋饭来还不容易吗？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "呆子，你懂什么？这里山势险峻，只怕藏有妖精，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "要是我走远了，有妖精来害师父怎么办？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "这光天化日的哪有妖精啊，师父，师兄是骗你的，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "我刚才我明明在地里头看见有犁杖瓦罐的，那不是人家的东西吗？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "呆子。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "悟空。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "那你为什么不去化斋呀？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父，待我打探一下。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父，那南山有一片红，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "想必是熟透的果子，我去摘几个给你们吃。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "嘿嘿嘿，太好了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "妖怪。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "我说，妖怪呢？师兄，这妖怪呢？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "想必是过路的妖怪。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "呵呵，师兄，你可真会说嘴。这妖怪还有过路的、长住的。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "沙和尚"
     content: "二师兄，大师兄说得对呀，这荒山野岭的还是小心为是。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "悟空，既然没事了，那就快去吧。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "嗯，您先坐。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父，我不回来，你们千万不可走出圈外。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "沙和尚"
     content: "大师兄放心。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "结束对话"

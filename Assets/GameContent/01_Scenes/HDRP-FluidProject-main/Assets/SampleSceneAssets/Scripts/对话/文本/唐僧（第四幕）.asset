@@ -15,224 +15,224 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "白骨精"
     content: "女儿，你在哪儿啊？女儿……"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父！不好了！那妈妈儿来寻闺女了！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "沙和尚"
     content: "二师兄不要乱说，这荒山野岭的，哪来的老妇人？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "白骨精"
     content: "请问长老，你可曾看见一个送饭的女子吗？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父莫念了！有什么话就说罢！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "有什么话说！出家人耳听善言，不堕地狱。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "我这般劝化你，你怎么还是行凶？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "平白无故打死一个，又打死一个，这是为何？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "他是妖精。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "这个猴子胡说！哪有这么多妖怪！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "你是个无心向善之辈，有意作恶之人，你走吧！"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父又叫我走，回去便也回去了，只是一件希望师父答应。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "有什么要答应的？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "师父，他要和你分行李哩。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "跟着你做了这几年和尚，不成空着手回去？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "猪八戒"
     content: "你把那包袱里的甚么旧布衫，破帽子，分两件给他。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "你这个尖嘴的夯货！俺老孙一向秉教沙门，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "更无一丝嫉妒之意，贪恋之心，怎么要分什么行李？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "你既不嫉妒贪恋，为什么不走？"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "不瞒师父说，老孙五百年前，在花果山水帘洞大展英雄之际，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "收降七十二洞邪魔，手下有四万七千群怪，头戴的是紫金冠，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "身穿的是赭黄袍，腰系的是蓝田带，足踏的是步云履，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "手执的是如意金箍棒，着实也曾为人。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "自从跟你做了徒弟，把这个金箍儿勒在我头上，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "要是回去，却也难见故乡人。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "师父果真不要我的话，就把那个《松箍儿咒》念一念，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "退下这个箍子，交付与你，套在别人头上。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "悟空，我当时只是菩萨暗受一卷《紧箍儿咒》，"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "却没有甚么松箍儿咒。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "若无《松箍儿咒》，你还带我去菩萨那里走走吧。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "唐僧"
     content: "你且起来，我再饶你这一次，不可再次行凶了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
   - speaker: "孙悟空"
     content: "再不敢了，再不敢了。"
-    portrait: {fileID: 0}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "结束对话"
