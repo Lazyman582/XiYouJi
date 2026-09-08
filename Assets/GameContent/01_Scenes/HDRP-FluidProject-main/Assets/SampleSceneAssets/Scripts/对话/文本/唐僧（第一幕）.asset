@@ -10,242 +10,308 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
-  m_Name: "唐僧（第一幕）"
+  m_Name: "\u5510\u50E7\uFF08\u7B2C\u4E00\u5E55\uFF09"
   m_EditorClassIdentifier: 
   dialoguePieces:
-  - speaker: "猪八戒"
-    content: "肚子饿得咕咕叫，我实在是走不动了。"
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u809A\u5B50\u997F\u5F97\u5495\u5495\u53EB\uFF0C\u6211\u5B9E\u5728\u662F\u8D70\u4E0D\u52A8\u4E86\u3002"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5446\u5B50\uFF0C\u4EBA\u53C2\u679C\u90FD\u5403\u4E86\uFF0C\u8FD8\u997F\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u90A3\u54EA\u7BA1\u7528\u554A\uFF0C\u6211\uFF0C\u6211\u4E0D\u8D70\u4E86\u3002\u771F\u662F\u3002"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u6C99\u548C\u5C1A"
+    content: "\u4E8C\u5E08\u5144\u4E0B\u4E86\u5C71\u53BB\uFF0C\u624D\u80FD\u6295\u5BBF\u5316\u658B\uFF0C\u8D70\u5427\u3002"
+    portrait: {fileID: 21300000, guid: 76fa2d23a0fcbac4aa8e25cb6bdf937e, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u4F60\u8BF4\u5F97\u5012\u597D\u542C\uFF0C\u54FC\u3002\u6709\u4E86\uFF0C\u592A\u597D\u4E86\uFF0C\u5509\uFF0C\u7A7A\u7684\u3002"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u5C71\u8FDE\u5C71\uFF0C\u8DEF\u5F2F\u5F2F\uFF0C\u4EC0\u4E48\u65F6\u5019\u8D70\u51FA\u5C71\u5450\u8FD9\u3002"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u5E08\u7236\uFF0C\u4F60\u770B\uFF0C\u6211\u8001\u732A\u90FD\u5FEB\u997F\u660F\u4E86\u3002"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u6211\u4E5F\u89C9\u5F97\u9965\u997F\u4E86\uFF0C\u609F\u7A7A\u3002"
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u4F60\u53BB\u5316\u4E9B\u658B\u6765\u5427\u3002"
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\uFF0C\u8FD9\u8352\u5C71\u91CE\u5CAD\u4E00\u65E0\u6751\u5E84\u4E8C\u65E0\u4EBA\u5BB6\uFF0C\u53EB\u5F92\u5F1F\u4E0A\u54EA\u513F\u5316\u658B\u53BB\uFF1F"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u5E08\u5144\uFF0C\u4F60\u4E00\u4E2A\u8DDF\u6597\u5C31\u5341\u4E07\u516B\u5343\u91CC\uFF0C\u5F04\u70B9\u658B\u996D\u6765\u8FD8\u4E0D\u5BB9\u6613\u5417\uFF1F"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5446\u5B50\uFF0C\u4F60\u61C2\u4EC0\u4E48\uFF1F\u8FD9\u91CC\u5C71\u52BF\u9669\u5CFB\uFF0C\u53EA\u6015\u85CF\u6709\u5996\u7CBE\uFF0C"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u8981\u662F\u6211\u8D70\u8FDC\u4E86\uFF0C\u6709\u5996\u7CBE\u6765\u5BB3\u5E08\u7236\u600E\u4E48\u529E\uFF1F"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u8FD9\u5149\u5929\u5316\u65E5\u7684\u54EA\u6709\u5996\u7CBE\u554A\uFF0C\u5E08\u7236\uFF0C\u5E08\u5144\u662F\u9A97\u4F60\u7684\uFF0C"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u6211\u521A\u624D\u6211\u660E\u660E\u5728\u5730\u91CC\u5934\u770B\u89C1\u6709\u7281\u6756\u74E6\u7F50\u7684\uFF0C\u90A3\u4E0D\u662F\u4EBA\u5BB6\u7684\u4E1C\u897F\u5417\uFF1F"
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5446\u5B50\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u609F\u7A7A\u3002"
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u90A3\u4F60\u4E3A\u4EC0\u4E48\u4E0D\u53BB\u5316\u658B\u5440\uFF1F"
+    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\uFF0C\u5F85\u6211\u6253\u63A2\u4E00\u4E0B\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\uFF0C\u90A3\u5357\u5C71\u6709\u4E00\u7247\u7EA2\uFF0C"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u60F3\u5FC5\u662F\u719F\u900F\u7684\u679C\u5B50\uFF0C\u6211\u53BB\u6458\u51E0\u4E2A\u7ED9\u4F60\u4EEC\u5403\u3002"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u563F\u563F\u563F\uFF0C\u592A\u597D\u4E86\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "呆子，人参果都吃了，还饿。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5996\u602A\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "那哪管用啊，我，我不走了。真是。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u6211\u8BF4\uFF0C\u5996\u602A\u5462\uFF1F\u5E08\u5144\uFF0C\u8FD9\u5996\u602A\u5462\uFF1F"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "沙和尚"
-    content: "二师兄下了山去，才能投宿化斋，走吧。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u60F3\u5FC5\u662F\u8FC7\u8DEF\u7684\u5996\u602A\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "你说得倒好听，哼。有了，太好了，唉，空的。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u732A\u516B\u6212"
+    content: "\u5475\u5475\uFF0C\u5E08\u5144\uFF0C\u4F60\u53EF\u771F\u4F1A\u8BF4\u5634\u3002\u8FD9\u5996\u602A\u8FD8\u6709\u8FC7\u8DEF\u7684\u3001\u957F\u4F4F\u7684\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "山连山，路弯弯，什么时候走出山呐这。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u6C99\u548C\u5C1A"
+    content: "\u4E8C\u5E08\u5144\uFF0C\u5927\u5E08\u5144\u8BF4\u5F97\u5BF9\u5440\uFF0C\u8FD9\u8352\u5C71\u91CE\u5CAD\u7684\u8FD8\u662F\u5C0F\u5FC3\u4E3A\u662F\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "师父，你看，我老猪都快饿昏了。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5510\u50E7"
+    content: "\u609F\u7A7A\uFF0C\u65E2\u7136\u6CA1\u4E8B\u4E86\uFF0C\u90A3\u5C31\u5FEB\u53BB\u5427\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "唐僧"
-    content: "我也觉得饥饿了，悟空。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u55EF\uFF0C\u60A8\u5148\u5750\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5E08\u7236\uFF0C\u6211\u4E0D\u56DE\u6765\uFF0C\u4F60\u4EEC\u5343\u4E07\u4E0D\u53EF\u8D70\u51FA\u5708\u5916\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "唐僧"
-    content: "你去化些斋来吧。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父，这荒山野岭一无村庄二无人家，叫徒弟上哪儿化斋去？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "师兄，你一个跟斗就十万八千里，弄点斋饭来还不容易吗？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "呆子，你懂什么？这里山势险峻，只怕藏有妖精，"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "要是我走远了，有妖精来害师父怎么办？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "这光天化日的哪有妖精啊，师父，师兄是骗你的，"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "我刚才我明明在地里头看见有犁杖瓦罐的，那不是人家的东西吗？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "呆子。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "唐僧"
-    content: "悟空。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "唐僧"
-    content: "那你为什么不去化斋呀？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父，待我打探一下。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父，那南山有一片红，"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "想必是熟透的果子，我去摘几个给你们吃。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "嘿嘿嘿，太好了。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "妖怪。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "我说，妖怪呢？师兄，这妖怪呢？"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "想必是过路的妖怪。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "猪八戒"
-    content: "呵呵，师兄，你可真会说嘴。这妖怪还有过路的、长住的。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "沙和尚"
-    content: "二师兄，大师兄说得对呀，这荒山野岭的还是小心为是。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "唐僧"
-    content: "悟空，既然没事了，那就快去吧。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "嗯，您先坐。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "孙悟空"
-    content: "师父，我不回来，你们千万不可走出圈外。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "沙和尚"
-    content: "大师兄放心。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u6C99\u548C\u5C1A"
+    content: "\u5927\u5E08\u5144\u653E\u5FC3\u3002"
     portrait: {fileID: 0}
     nextIndex: 0
     choices:
-    - choiceText: "结束对话"
+    - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
       targetIndex: -1
       broadcastEvent: 0
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   title: 
   author: 
