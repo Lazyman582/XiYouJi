@@ -5205,6 +5205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_ClickMove
       objectReference: {fileID: 0}
+    - target: {fileID: 6350715556466381214, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 2d4546e9b67285046b0c10b68c8f7ec3, type: 3}
     - target: {fileID: 9184478563872758482, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.535263
@@ -7002,9 +7006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7ec1deeb7daf1408cbd7d6cc817adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: village
+  sceneName: wild
   paramKey: playerID
-  paramValue: 0
+  paramValue: 1
 --- !u!1001 &952120641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8735,7 +8739,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peach
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5950350889995786230, guid: c3f4a4e350122c54890409af21ba2e9b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
