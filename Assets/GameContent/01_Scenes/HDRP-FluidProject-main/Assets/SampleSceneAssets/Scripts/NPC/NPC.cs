@@ -25,7 +25,7 @@ public class NPCInteract : MonoBehaviour
     // 鼠标点击 NPC（需 Collider + 合适的物理设置）
     private void OnMouseDown()
     {
-        Debug.Log("5555");
+    
         // 1. 检查数据是否有效
         if (dialogueContainer == null)
         {

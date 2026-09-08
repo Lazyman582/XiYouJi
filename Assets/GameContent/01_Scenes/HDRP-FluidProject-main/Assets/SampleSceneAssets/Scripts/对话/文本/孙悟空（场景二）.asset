@@ -17,7 +17,10 @@ MonoBehaviour:
     content: "\u8FD9\u5973\u5B50\u6CA1\u6C14\u4E86\uFF01"
     portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
-    choices: []
+    choices:
+    - choiceText: 
+      targetIndex: 26
+      broadcastEvent: 0
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
@@ -252,9 +255,9 @@ MonoBehaviour:
     portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices:
-    - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
+    - choiceText: "\u7EE7\u7EED\u4E0A\u8DEF"
       targetIndex: -1
-      broadcastEvent: 0
+      broadcastEvent: 1
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0

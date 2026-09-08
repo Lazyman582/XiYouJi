@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameContent/01_Scenes/peach.unity
     guid: 28330e2df3e3c36408c397af9e42c9c9
+  - enabled: 1
+    path: Assets/GameContent/01_Scenes/Start.unity
+    guid: 66ccf663baba2da4da4fd55605f01663
   m_configObjects: {}

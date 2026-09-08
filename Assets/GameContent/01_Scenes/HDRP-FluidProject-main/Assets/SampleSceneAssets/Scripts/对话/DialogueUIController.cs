@@ -67,7 +67,12 @@ public class DialogueUIController : MonoBehaviour
     public void OpenPanel()
     {
         if (dialoguePanelRoot != null)
+        {
             dialoguePanelRoot.SetActive(true);
+            if (dialoguePanelRoot.transform.childCount > 0)
+                dialoguePanelRoot.transform.GetChild(0).gameObject.SetActive(true);
+        }
+
     }
 
     // 显示当前对话（追加到信息流）
