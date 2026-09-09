@@ -77,7 +77,7 @@ MonoBehaviour:
     broadcastOnFinish: 0
     finishEventKey: 
   - speaker: "\u5510\u50E7"
-    content: "\u51FA\u5BB6\u4EBA\u884C\u5584\uFF0C\u5982\u6625\u56ED\u4E4B\u8349\uFF0C\u4E0D\u89C1\u5176\u957F\uFF0C\u65E5\u6709\u6240\u589E\uFF1B"
+    content: "\u51FA\u5BB6\u4EBA\u884C\u5584\uFF0C\u5982\u6625\u56ED\u4E4B\u8349\uFF0C\u4E0D\u89C1\u5176\u957F\uFF0C\u65E5\u6709\u6240\u589E"
     portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
@@ -279,6 +279,18 @@ MonoBehaviour:
     portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5B59\u609F\u7A7A"
+    content: "\u5509......"
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
+    nextIndex: 0
+    choices:
+    - choiceText: "\u79BB\u5F00\u5510\u50E7"
+      targetIndex: -1
+      broadcastEvent: 1
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
