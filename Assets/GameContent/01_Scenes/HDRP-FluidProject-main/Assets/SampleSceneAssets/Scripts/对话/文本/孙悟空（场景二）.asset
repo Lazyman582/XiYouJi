@@ -17,10 +17,7 @@ MonoBehaviour:
     content: "\u8FD9\u5973\u5B50\u6CA1\u6C14\u4E86\uFF01"
     portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
-    choices:
-    - choiceText: 
-      targetIndex: 26
-      broadcastEvent: 0
+    choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
@@ -38,10 +35,7 @@ MonoBehaviour:
     content: "\u5E08\u7236\uFF0C\u6211\u6253\u7684\u662F\u5996\u602A"
     portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
-    choices:
-    - choiceText: "\u7EE7\u7EED\u4E0A\u8DEF"
-      targetIndex: -1
-      broadcastEvent: 1
+    choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
@@ -128,12 +122,12 @@ MonoBehaviour:
     broadcastOnFinish: 0
     finishEventKey: 
   - speaker: "\u732A\u516B\u6212"
-    content: "\u6015\u4F60\u5FF5\u4EC0\u4E48\u7D27\u7B8D\u513F\u5492\uFF0C\u6545\u610F\u4F7F\u4E2A\u969C\u773C\u6CD5\uFF0C\u53D8\u505A\u8FD9\u7B49\u6837\u4E1C\u897F\uFF0C\u8BA9\u4F60\u4E0D\u5FF5\u5492\u54E9"
+    content: "\u6015\u4F60\u5FF5\u4EC0\u4E48\u7D27\u7B8D\u513F\u5492\uFF0C\u6545\u610F\u4F7F\u4E2A\u969C\u773C\u6CD5\uFF0C\u53D8\u505A\u8FD9\u7B49\u6837\u4E1C\u897F\uFF0C\u8BA9\u4F60\u4E0D\u5FF5\u5492"
     portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
     choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
+    broadcastOnShow: 1
+    broadcastEventKey: "\u5934\u75BC"
     broadcastOnFinish: 0
     finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"

@@ -176,7 +176,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4640301883841591112}
   - component: {fileID: 8988114806994411762}
-  - component: {fileID: 5950350889995786230}
   - component: {fileID: 3609497334496294707}
   m_Layer: 0
   m_Name: Peach
@@ -224,19 +223,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7364777, y: 1.3315821, z: 1.7157496}
   m_Center: {x: 0.032215256, y: 0.16579115, z: 0.014689603}
---- !u!114 &5950350889995786230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6421920844508784264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e862ae94b3ae16b49ba368e045eccb4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: 550495906c10e1d4396dc53f509310c0, type: 2}
 --- !u!114 &3609497334496294707
 MonoBehaviour:
   m_ObjectHideFlags: 0

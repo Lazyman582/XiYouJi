@@ -13,32 +13,26 @@ MonoBehaviour:
   m_Name: "\u6843\u5B50"
   m_EditorClassIdentifier: 
   dialoguePieces:
-  - speaker: "\u6843\u5B50"
-    content: "     \u6211\u662F\u4E00\u53EA\u96F7\u9706\u5927\u6843\u5B50"
-    portrait: {fileID: -1327279500, guid: bae327104e09ea74ea0ece64f6713e4d, type: 3}
-    nextIndex: 0
-    choices: []
   - speaker: "\u5B59\u609F\u7A7A"
-    content: "\u4F60\u600E\u4E48\u4F1A\u5728\u8FD9"
+    content: "\u597D\u5927\u7684\u6843\u5B50"
     portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
-  - speaker: "\u6843\u5B50"
-    content: "ly\u5E72\u7684"
-    portrait: {fileID: -1327279500, guid: bae327104e09ea74ea0ece64f6713e4d, type: 3}
-    nextIndex: 0
-    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
-    content: "ly\u795E\u4E86"
+    content: "\u591A\u6458\u51E0\u4E2A\u56DE\u53BB\u7ED9\u5E08\u7236\u4ED6\u4EEC\u5C1D\u5C1D"
     portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
-    nextIndex: 0
-    choices: []
-  - speaker: "\u5965\u7279\u66FC"
-    content: "\u8FD8\u771F\u662F"
-    portrait: {fileID: -1790309768, guid: d78be8f90eb921e4e892d778833d30d7, type: 3}
     nextIndex: 0
     choices:
-    - choiceText: "\u786E\u5B9E\u795E\u4E86"
+    - choiceText: "\u6458\u6843"
       targetIndex: -1
+      broadcastEvent: 1
+    broadcastOnShow: 1
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   title: 
   author: 
