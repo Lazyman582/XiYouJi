@@ -17,10 +17,7 @@ MonoBehaviour:
     content: "\u963F\u5F25\u9640\u4F5B\uFF01\u897F\u65B9\u771F\u662F\u798F\u5730\uFF01\u90A3\u516C\u516C\u8DEF\u90FD\u8D70\u4E0D\u52A8\u4E86\uFF0C\u8FD8\u5728\u5FF5\u7ECF\u3002"
     portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
     nextIndex: 0
-    choices:
-    - choiceText: 15
-      targetIndex: 15
-      broadcastEvent: 0
+    choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
@@ -134,7 +131,7 @@ MonoBehaviour:
     broadcastOnFinish: 0
     finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
-    content: "\uFF08\u8981\u4E0D\u6253\u4ED6\uFF0C\u5E08\u7236\u6050\u6015\u6709\u6027\u547D\u4E4B\u5FE7\uFF1B\u82E5\u8981\u6253\u4ED6\uFF0C\u53C8\u6015\u5E08\u7236\u5FF5\u90A3\u5492\u8BED\u3002\uFF09"
+    content: "\uFF08\u8981\u4E0D\u6253\u4ED6\uFF0C\u5E08\u7236\u6050\u6015\u6709\u6027\u547D\u4E4B\u5FE7\u3002\u82E5\u8981\u6253\u4ED6\uFF0C\u53C8\u6015\u5E08\u7236\u5FF5\u90A3\u5492\u8BED\u3002\uFF09"
     portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
