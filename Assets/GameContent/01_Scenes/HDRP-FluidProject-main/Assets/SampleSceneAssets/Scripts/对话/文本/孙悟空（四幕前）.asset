@@ -25,9 +25,9 @@ MonoBehaviour:
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u732A\u516B\u6212"
     content: "\u5E08\u7236\uFF0C\u4F60\u5148\u4E0D\u8981\u5938\u5956\uFF0C\u4EBA\u5BB6\u8981\u548C\u6211\u4EEC\u5BF9\u4ED7\u5462\uFF01"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -43,54 +43,54 @@ MonoBehaviour:
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u732A\u516B\u6212"
     content: "\u5E08\u7236\u4F60\u60F3\u554A\uFF0C\u5927\u5E08\u5144\u6740\u4ED6\u7684\u5973\u513F\uFF0C\u53C8\u6740\u4ED6\u7684\u8001\u5A46\u5B50\uFF0C\u4EBA\u5BB6\u6B63\u8981\u62A5\u5B98\u5462\u3002"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: 36da1736cc7ee1a40ad30007c40c236f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\u4F60\u8FD9\u4E2A\u5446\u5B50\uFF0C\u4F11\u8981\u80E1\u8BF4\u3002\u5E08\u7236\uFF0C\u7B49\u8001\u5B59\u518D\u53BB\u770B\u770B\u3002"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\u8001\u5934\uFF0C\u4F60\u600E\u4E48\u5728\u8FD9\u91CC\u5FF5\u7ECF\uFF1F"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u8001\u516C\u516C"
     content: "\u957F\u8001\u554A\uFF0C\u6211\u5728\u6B64\u7B49\u5019\u6211\u7684\u59BB\u8001\u59BB\u5C0F\u5973\u5462"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\u4F60\u4E0D\u7528\u8896\u5B50\u91CC\u88C5\u9B3C\u6765\u54C4\u6211\uFF0C\u6211\u8BA4\u5F97\u4F60"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u8001\u516C\u516C"
     content: "\u957F\u8001\u6253\u5C71\u4E0A\u6765\u53EF\u89C1\u6211\u59BB\u5C0F\uFF1F"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -106,18 +106,18 @@ MonoBehaviour:
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u8001\u516C\u516C"
     content: "\u5C0F\u5973\u524D\u53BB\u5730\u91CC\u9001\u996D\uFF0C\u8001\u5988\u5988\u53C8\u53BB\u5BFB\u5979\uFF0C\u5929\u90FD\u5230\u8FD9\u4E2A\u65F6\u5019\u4E86\uFF0C\u8FD8\u4E0D\u89C1\u56DE\u6765......"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\u4F60\u8FD9\u5996\u7CBE\uFF0C\u4E24\u6B21\u53D8\u5316\u90FD\u88AB\u6211\u8BC6\u7834\uFF0C\u5982\u4ECA\u7ADF\u7136\u53C8\u6765\u9A97\u4EBA\uFF0C\u770B\u6253\uFF01"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -133,27 +133,27 @@ MonoBehaviour:
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\uFF08\u8981\u4E0D\u6253\u4ED6\uFF0C\u5E08\u7236\u6050\u6015\u6709\u6027\u547D\u4E4B\u5FE7\uFF1B\u82E5\u8981\u6253\u4ED6\uFF0C\u53C8\u6015\u5E08\u7236\u5FF5\u90A3\u5492\u8BED\u3002\uFF09"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\uFF08\u770B\u6211\u5148\u54C4\u4ED6\u4E00\u54C4\uFF0C\u4E5F\u5C31\u7F62\u4E86\u3002\uFF09"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
     broadcastOnFinish: 0
     finishEventKey: 
-  - speaker: "\u5510\u50E7"
+  - speaker: "\u5B59\u609F\u7A7A"
     content: "\u8FD9\u5996\u7CBE\u4E09\u756A\u6765\u620F\u5F04\u6211\u5E08\u7236\uFF0C\u8FD9\u4E00\u756A\u662F\u8981\u6253\u6740\u4ED6\u3002\u4F60\u6B64\u7ED9\u6211\u4F5C\u8BC1\uFF0C\u4E0D\u8BB8\u8D70\u4E86\u3002"
-    portrait: {fileID: 21300000, guid: 5d5bb8269da12674893ec26e0f33d2ed, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "\u653B\u51FB\uFF01"

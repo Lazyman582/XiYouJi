@@ -10,207 +10,263 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 934c1ef0cd8351447bfb2eeb8c16fb23, type: 3}
-  m_Name: "白骨精（第一幕）"
+  m_Name: "\u767D\u9AA8\u7CBE\uFF08\u7B2C\u4E00\u5E55\uFF09"
   m_EditorClassIdentifier: 
   dialoguePieces:
-  - speaker: "白骨精"
-    content: "黑狐精。"
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u9ED1\u72D0\u7CBE\u3002"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "在，夫人。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u5728\uFF0C\u592B\u4EBA\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "唐僧可曾到来？"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u5510\u50E7\u53EF\u66FE\u5230\u6765\uFF1F"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "我已命小的们把守山林路口，唐僧来到即刻禀报夫人。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u6211\u5DF2\u547D\u5C0F\u7684\u4EEC\u628A\u5B88\u5C71\u6797\u8DEF\u53E3\uFF0C\u5510\u50E7\u6765\u5230\u5373\u523B\u7980\u62A5\u592B\u4EBA\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "我的血食呢？"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u6211\u7684\u8840\u98DF\u5462\uFF1F"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "这…夫人，这一带生人死的死，逃的逃，"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u8FD9\u2026\u592B\u4EBA\uFF0C\u8FD9\u4E00\u5E26\u751F\u4EBA\u6B7B\u7684\u6B7B\uFF0C\u9003\u7684\u9003\uFF0C"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "连山上的野物也难以捉到了。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u8FDE\u5C71\u4E0A\u7684\u91CE\u7269\u4E5F\u96BE\u4EE5\u6349\u5230\u4E86\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "嗯？"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u55EF\uFF1F"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "我这就去找，我这就去找。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u6211\u8FD9\u5C31\u53BB\u627E\uFF0C\u6211\u8FD9\u5C31\u53BB\u627E\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "夫人，请看。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u592B\u4EBA\uFF0C\u8BF7\u770B\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "嗯？"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u55EF\uFF1F"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "女儿"
-    content: "娘，娘，爹，爹。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5973\u513F"
+    content: "\u5A18\uFF0C\u5A18\uFF0C\u7239\uFF0C\u7239\u3002"
     portrait: {fileID: 21300000, guid: 6f3a03287529aa34a9bdc8a7b15fb68f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "母亲"
-    content: "女儿。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u6BCD\u4EB2"
+    content: "\u5973\u513F\u3002"
     portrait: {fileID: 21300000, guid: 0e8e081b86ac89f46be5b7a600c68699, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "女儿"
-    content: "娘，娘，爹，我怕。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5973\u513F"
+    content: "\u5A18\uFF0C\u5A18\uFF0C\u7239\uFF0C\u6211\u6015\u3002"
     portrait: {fileID: 21300000, guid: 6f3a03287529aa34a9bdc8a7b15fb68f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "父亲、母亲"
-    content: "女儿。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u7236\u4EB2\u3001\u6BCD\u4EB2"
+    content: "\u5973\u513F\u3002"
     portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "女儿"
-    content: "我怕，爹。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5973\u513F"
+    content: "\u6211\u6015\uFF0C\u7239\u3002"
     portrait: {fileID: 21300000, guid: 6f3a03287529aa34a9bdc8a7b15fb68f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "母亲"
-    content: "夫人，你发发慈悲吧。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u6BCD\u4EB2"
+    content: "\u592B\u4EBA\uFF0C\u4F60\u53D1\u53D1\u6148\u60B2\u5427\u3002"
     portrait: {fileID: 21300000, guid: 0e8e081b86ac89f46be5b7a600c68699, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "父亲"
-    content: "孩子她娘。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u7236\u4EB2"
+    content: "\u5B69\u5B50\u5979\u5A18\u3002"
     portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "女儿"
-    content: "娘！"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5973\u513F"
+    content: "\u5A18\uFF01"
     portrait: {fileID: 21300000, guid: 6f3a03287529aa34a9bdc8a7b15fb68f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "父亲"
-    content: "啊？女儿！"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u7236\u4EB2"
+    content: "\u554A\uFF1F\u5973\u513F\uFF01"
     portrait: {fileID: 21300000, guid: 3ccf1d130ed29894caa3f044e3ad1cc1, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "女儿"
-    content: "啊！"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u5973\u513F"
+    content: "\u554A\uFF01"
     portrait: {fileID: 21300000, guid: 6f3a03287529aa34a9bdc8a7b15fb68f, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "骷髅兵"
-    content: "夫人，夫人，大喜事，大喜事呀，"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "骷髅兵"
-    content: "那西天取经的唐僧上山来了。"
-    portrait: {fileID: 0}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "好，吃了唐僧肉，益寿又延年。"
-    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "夫人，那唐僧手下有三个徒弟，其中大闹天宫的…"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u592B\u4EBA\uFF0C\u592B\u4EBA\uFF0C\u5927\u559C\u4E8B\uFF0C\u5927\u559C\u4E8B\u5440\uFF0C"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "不就是那孙悟空嘛。"
-    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
-    nextIndex: 0
-    choices: []
-    broadcastOnShow: 0
-    broadcastEventKey: 
-  - speaker: "黑狐精"
-    content: "夫人，还是小心从事为好。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u90A3\u897F\u5929\u53D6\u7ECF\u7684\u5510\u50E7\u4E0A\u5C71\u6765\u4E86\u3002"
     portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
     broadcastEventKey: 
-  - speaker: "白骨精"
-    content: "你留守洞中，我去看看。"
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u597D\uFF0C\u5403\u4E86\u5510\u50E7\u8089\uFF0C\u76CA\u5BFF\u53C8\u5EF6\u5E74\u3002"
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u592B\u4EBA\uFF0C\u90A3\u5510\u50E7\u624B\u4E0B\u6709\u4E09\u4E2A\u5F92\u5F1F\uFF0C\u5176\u4E2D\u5927\u95F9\u5929\u5BAB\u7684\u2026"
+    portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u4E0D\u5C31\u662F\u90A3\u5B59\u609F\u7A7A\u561B\u3002"
+    portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u9ED1\u72D0\u7CBE"
+    content: "\u592B\u4EBA\uFF0C\u8FD8\u662F\u5C0F\u5FC3\u4ECE\u4E8B\u4E3A\u597D\u3002"
+    portrait: {fileID: 21300000, guid: 7bd1796ae5ba8b74cb76211631326bb4, type: 3}
+    nextIndex: 0
+    choices: []
+    broadcastOnShow: 0
+    broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
+  - speaker: "\u767D\u9AA8\u7CBE"
+    content: "\u4F60\u7559\u5B88\u6D1E\u4E2D\uFF0C\u6211\u53BB\u770B\u770B\u3002"
     portrait: {fileID: 21300000, guid: b7f63495ebad86842a5e7da0cd1d071c, type: 3}
     nextIndex: 0
     choices:
-    - choiceText: "结束对话"
+    - choiceText: "\u7ED3\u675F\u5BF9\u8BDD"
       targetIndex: -1
       broadcastEvent: 0
     broadcastOnShow: 0
     broadcastEventKey: 
+    broadcastOnFinish: 0
+    finishEventKey: 
   title: 
   author: 
