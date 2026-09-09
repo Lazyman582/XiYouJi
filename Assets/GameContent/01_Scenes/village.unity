@@ -6075,6 +6075,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 88157b3f13f079441b4fe11da2c2207c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 77600863}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 88157b3f13f079441b4fe11da2c2207c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 77600866}
   m_SourcePrefab: {fileID: 100100000, guid: 88157b3f13f079441b4fe11da2c2207c, type: 3}
 --- !u!1 &77600861 stripped
 GameObject:
@@ -6134,6 +6137,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 11400000, guid: 9caf3f623bb4f694081faf4aafc344af, type: 2}
+--- !u!114 &77600866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77600861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f173d077d31548d44b334bcc6e2c63ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewCamera: {fileID: 1125402709}
+  outlineTemplate: {fileID: 2100000, guid: 37ce7bd372829c0429b816108e084903, type: 2}
+  transition: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0.09763956, a: 1}
+  outlineWidth: 4
+  createStaticMeshColliders: 1
 --- !u!1001 &79294272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14063,13 +14084,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8589761107880876177, guid: c209110403a8bdf40ae2887958bb574b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 514772324}
   m_SourcePrefab: {fileID: 100100000, guid: c209110403a8bdf40ae2887958bb574b, type: 3}
 --- !u!1 &514772322 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8858355841954753914, guid: c209110403a8bdf40ae2887958bb574b, type: 3}
   m_PrefabInstance: {fileID: 514772321}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &514772323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8589761107880876177, guid: c209110403a8bdf40ae2887958bb574b, type: 3}
+  m_PrefabInstance: {fileID: 514772321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &514772324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514772323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f173d077d31548d44b334bcc6e2c63ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewCamera: {fileID: 0}
+  outlineTemplate: {fileID: 2100000, guid: 37ce7bd372829c0429b816108e084903, type: 2}
+  transition: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0.09763956, a: 1}
+  outlineWidth: 4
+  createStaticMeshColliders: 1
 --- !u!1001 &526592505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17934,6 +17981,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 318531004294899816, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 717555385}
+    - targetCorrespondingSourceObject: {fileID: 318531004294899816, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 717555388}
   m_SourcePrefab: {fileID: 100100000, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
 --- !u!4 &717555383 stripped
 Transform:
@@ -17993,6 +18043,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 11400000, guid: b275fc0508cbb284683893d0272ef6ef, type: 2}
+--- !u!114 &717555388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717555384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f173d077d31548d44b334bcc6e2c63ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewCamera: {fileID: 1125402709}
+  outlineTemplate: {fileID: 2100000, guid: 37ce7bd372829c0429b816108e084903, type: 2}
+  transition: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0.09763956, a: 1}
+  outlineWidth: 4
+  createStaticMeshColliders: 1
 --- !u!1001 &717698099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38291,6 +38359,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 318531004294899816, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1711487369}
+    - targetCorrespondingSourceObject: {fileID: 318531004294899816, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1711487372}
   m_SourcePrefab: {fileID: 100100000, guid: 12352cf6e0fce7343a343505b5acea2b, type: 3}
 --- !u!4 &1711487367 stripped
 Transform:
@@ -38350,6 +38421,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueContainer: {fileID: 11400000, guid: 98ff77f5a564bb74a91df7357e87e88d, type: 2}
+--- !u!114 &1711487372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711487368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f173d077d31548d44b334bcc6e2c63ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewCamera: {fileID: 1125402709}
+  outlineTemplate: {fileID: 2100000, guid: 37ce7bd372829c0429b816108e084903, type: 2}
+  transition: {fileID: 0}
+  outlineColor: {r: 1, g: 0, b: 0.09763956, a: 1}
+  outlineWidth: 4
+  createStaticMeshColliders: 1
 --- !u!1001 &1722943010
 PrefabInstance:
   m_ObjectHideFlags: 0
