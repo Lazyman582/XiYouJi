@@ -15,7 +15,7 @@ MonoBehaviour:
   dialoguePieces:
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u597D\u5927\u7684\u6843\u5B50"
-    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices: []
     broadcastOnShow: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     finishEventKey: 
   - speaker: "\u5B59\u609F\u7A7A"
     content: "\u591A\u6458\u51E0\u4E2A\u56DE\u53BB\u7ED9\u5E08\u7236\u4ED6\u4EEC\u5C1D\u5C1D"
-    portrait: {fileID: -1838521507, guid: 061794685d8b12f4aa1139cc81997577, type: 3}
+    portrait: {fileID: 21300000, guid: b81ddf02d1f52264bb2ab020129cd909, type: 3}
     nextIndex: 0
     choices:
     - choiceText: "\u6458\u6843"

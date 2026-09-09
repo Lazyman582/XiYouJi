@@ -9315,6 +9315,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5926795893288961704, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
   m_PrefabInstance: {fileID: 200421087}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &200421090 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6350715556466381214, guid: 7d3ae10aafbc0da45aa9b0f7b93ccf4f, type: 3}
+  m_PrefabInstance: {fileID: 200421087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &202962804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
@@ -25392,7 +25397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8858355841954753914, guid: c209110403a8bdf40ae2887958bb574b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43657,6 +43662,14 @@ PrefabInstance:
       value: "\u52A8\u753Bcontrol"
       objectReference: {fileID: 0}
     - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
+      propertyPath: entries.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
+      propertyPath: entries.Array.data[2].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
       propertyPath: entries.Array.data[0].animator
       value: 
       objectReference: {fileID: 881906655}
@@ -43664,6 +43677,18 @@ PrefabInstance:
       propertyPath: entries.Array.data[1].animator
       value: 
       objectReference: {fileID: 881906655}
+    - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
+      propertyPath: entries.Array.data[2].animator
+      value: 
+      objectReference: {fileID: 200421090}
+    - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
+      propertyPath: entries.Array.data[2].boolName
+      value: "\u63D0\u7BEE"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002535904533965931, guid: 5ae61dabf7621a9409c3b5a84ed9f213, type: 3}
+      propertyPath: entries.Array.data[2].eventKey
+      value: "\u5934\u75BC"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
